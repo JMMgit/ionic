@@ -1,0 +1,24 @@
+page-home {
+
+    ion-buttons{
+        button:hover{ color:map-get($colors , myprime-light )!important }
+        
+    .is-highlighted:hover{ 
+        font-weight: bolder;
+        background-color: map-get($colors , myprime-light )!important;
+        color: white!important;
+     }
+    }
+    
+    @media screen and (max-width:1165px) {
+        .invi-sm{
+            display: none;
+        }
+    }
+
+    @media screen and (min-width:1165px) {
+        .invi-md{
+            display: none;
+        }
+    }
+}  

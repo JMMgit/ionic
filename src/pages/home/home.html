@@ -1,14 +1,53 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-navbar color="myprime-dark">
+    <ion-grid>
+      <ion-row justify-content-center align-items-center>
+        <ion-col col-md-3 col-sm-12>
+          <button class="invi-md" ion-button menuToggle icon-only>
+              <ion-icon name='menu'></ion-icon>
+            </button> 
+          <ion-title text-left>
+            <span >GOODTALK</span>
+          </ion-title>
+        </ion-col>
+        <ion-col class="invi-sm" col-5>
+          <ion-buttons text-center>
+              <button ion-button>Home</button>
+              <button ion-button>about us</button>
+              <button ion-button>Stories</button>
+              <button ion-button>careers</button>
+              <button ion-button>faq</button>
+              <button ion-button>contact us</button>
+              
+            </ion-buttons>
+        </ion-col>
+        <ion-col class="invi-sm" col-1 text-right>
+            <ion-buttons text-center>
+                <button class="is-highlighted" ion-button>Apply now</button>             
+             </ion-buttons>      
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+<section class="cover">
+    <ion-grid class="w-100 h-100">
+        <ion-row justify-content-center align-items-center class="w-100 h-100">
+          <ion-col col-9 class="w-100 h-100">
+              <ion-grid class="w-100 h-100">
+                <ion-row justify-content-left align-items-center class="w-100 h-100">
+                  <ion-col col-5>
+                    <h1>BE A HOME-BASED ONLINE ENGLISH TEACHER</h1>
+                    <p>Earn as much as Php 40,000 per month while choosing your own schedule.</p>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  
+</section>
 </ion-content>
