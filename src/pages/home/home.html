@@ -1,31 +1,24 @@
 <ion-header>
-
-  <ion-navbar color="myprime-dark">
-    <ion-grid>
-      <ion-row justify-content-center align-items-center>
-        <ion-col col-md-3 col-sm-12>
-          <button class="invi-md" ion-button menuToggle icon-only>
+  <ion-navbar>
+    <ion-grid no-padding>
+      <ion-row class="my-3" justify-content-center align-items-center>
+        <ion-col class="invi-lg" col-md-1>
+          <button ion-button menuToggle icon-only>
               <ion-icon name='menu'></ion-icon>
-            </button> 
-          <ion-title text-left>
-            <span >GOODTALK</span>
-          </ion-title>
+          </button> 
         </ion-col>
-        <ion-col class="invi-sm" col-5>
-          <ion-buttons text-center>
-              <button ion-button>Home</button>
-              <button ion-button>about us</button>
-              <button ion-button>Stories</button>
-              <button ion-button>careers</button>
-              <button ion-button>faq</button>
-              <button ion-button>contact us</button>
-              
+        <ion-col text-lg-left text-sm-right class="ml-0 invi-sm" col-sm-10 col-md-8 col-lg-6>
+          <ion-buttons>
+              <button class="pr-2" ion-button>Home</button>
+              <button class="px-2" ion-button>How to Use</button>
+              <button class="px-2" ion-button>careers</button>
+              <button class="px-2" ion-button>faq</button>
+              <button class="px-2" ion-button>Login</button>
+              <button class="is-highlighted ml-3" ion-button>Apply now</button>             
             </ion-buttons>
         </ion-col>
-        <ion-col class="invi-sm" col-1 text-right>
-            <ion-buttons text-center>
-                <button class="is-highlighted" ion-button>Apply now</button>             
-             </ion-buttons>      
+        <ion-col class="invi-md" col-lg-3> 
+            <ion-searchbar showCancelButton="true"></ion-searchbar>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -34,20 +27,25 @@
 </ion-header>
 <ion-content>
 <section class="cover">
-    <ion-grid class="w-100 h-100">
-        <ion-row justify-content-center align-items-center class="w-100 h-100">
-          <ion-col col-9 class="w-100 h-100">
-              <ion-grid class="w-100 h-100">
-                <ion-row justify-content-left align-items-center class="w-100 h-100">
-                  <ion-col col-5>
-                    <h1>BE A HOME-BASED ONLINE ENGLISH TEACHER</h1>
-                    <p>Earn as much as Php 40,000 per month while choosing your own schedule.</p>
-                  </ion-col>
-                </ion-row>
-              </ion-grid>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-  
+        <ion-grid class="h-100 invi-md">
+          <ion-row class="h-100" justify-content-center align-items-center >
+            <ion-col col-md-4>
+              <h1 class="font-weight-bold">Home Based Online English Teacher</h1>
+              <p>Competitive Salary with Insurance and Bonuses</p>
+              <button color="mysec" ion-button>Start Now</button>  
+            </ion-col>
+            <ion-col col-md-5>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <ion-grid no-padding class=" invi-lg h-100">
+          <ion-row class="h-100" justify-content-center align-items-end >
+            <ion-col class="mb-5 p-5" text-center>
+              <h1>HOME-BASED ONLINE ENGLISH TEACHER</h1>
+              <p>Earn as much as Php 14,000 per month with Insurance and Bonuses</p>
+              <button color="mysec" ion-button>Start Now</button>  
+            </ion-col>
+          </ion-row>
+        </ion-grid>
 </section>
 </ion-content>

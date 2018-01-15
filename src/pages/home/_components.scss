@@ -1,28 +1,12 @@
 page-home {
-    ion-title{
-        padding: 0!important;
-        span{
-            font-weight: 700!important;
-        }
-    }
+    ion-buttons{ button{ font-weight: 400!important } }
 
-    ion-buttons{
-        button{
-            padding:0 8px !important;
-            font-weight: 400!important
-        }
-
-    }
-
-    
     .is-highlighted{
         padding:20px 10px!important;
-        background-color:white;
+        color: white;
+        background-color: map-get($colors,myprime)!important;
         font-weight: bolder!important;
-        color: map-get($colors,myprime-dark)!important
-
     }
-
 
     .cover{
         width: 100%;
@@ -31,9 +15,8 @@ page-home {
         background-position: top;
         background-repeat:no-repeat;
         background-size: cover;
-
+        
         h1{
-            font-weight: 700;
             font-size: 3em;
             line-height: 1.5em;
             color: map-get($colors,myprime)!important
@@ -45,4 +28,5 @@ page-home {
             line-height: 1.5em;
         }
     }
+
 }   
