@@ -21,7 +21,7 @@ page-home {
         }
 
         .cover{
-            ion-col{ background-color: rgba(map-get($colors,myprime-dark),0.5)!important }
+            ion-col{ background-color: rgba(map-get($colors,myprime-dark),0.8)!important }
 
             h1{
                 color: white!important;
