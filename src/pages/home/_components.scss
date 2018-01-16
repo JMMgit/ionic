@@ -1,12 +1,5 @@
 page-home {
-    ion-buttons{display: inline-block }
 
-    .is-highlighted{
-        padding:20px 10px!important;
-        color: white;
-        background-color: map-get($colors,myprime)!important;
-        font-weight: bolder!important;
-    }
 
     .cover{
         width: 100%;
@@ -26,6 +19,21 @@ page-home {
             font-weight: 100;
             font-size: 1.5em;
             line-height: 1.5em;
+        }
+    }
+
+    .form-control{
+        border:none;
+        box-shadow:0 1px 0 -0.4px rgba(black,0.5);
+    }
+
+    select,textarea{
+        box-shadow:0 0 0.5px 0.3px rgba(black,0.5);
+    }
+
+    ion-card{
+        ion-icon{
+            font-size: 4em;
         }
     }
 

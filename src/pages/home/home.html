@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar color="light">
+  <ion-navbar color="myprime-dark">
     <ion-grid no-padding>
       <ion-row class="my-3" justify-content-center align-items-center>
         <ion-col class="invi-lg" col-md-1>
@@ -7,15 +7,15 @@
               <ion-icon name='menu'></ion-icon>
           </button> 
         </ion-col>
-        <ion-col text-lg-left text-sm-right class="ml-0 invi-sm" col-sm-10 col-md-8 col-lg-6>
+        <ion-col text-lg-left text-sm-right class="ml-0 invi-sm h-100" col-sm-10 col-md-8 col-lg-6>
           <ion-buttons>
               <button class="pr-2" ion-button>Home</button>
-              <button class="px-2" ion-button>How to Use</button>
-              <button class="px-2" ion-button>careers</button>
-              <button class="px-2" ion-button>faq</button>
-              <button class="px-2" ion-button>Login</button>            
+              <button (click)="goToHow()" class="px-2" ion-button>How to Use</button>
+              <button (click)="goToCareers()" class="px-2" ion-button>careers</button>
+              <button (click)="goToFaq()" class="px-2" ion-button>faq</button>
+              <button (click)="goToLogin()" class="px-2" ion-button>Login</button>            
           </ion-buttons>
-          <button class="is-highlighted ml-3" ion-button>Apply now</button> 
+          <button  class="is-highlighted ml-3" ion-button>Apply Now</button> 
         </ion-col>
         <ion-col class="invi-md" col-lg-3> 
             <ion-searchbar showCancelButton="true"></ion-searchbar>
@@ -27,25 +27,229 @@
 </ion-header>
 <ion-content>
 <section class="cover">
-        <ion-grid class="h-100 invi-md">
-          <ion-row class="h-100" justify-content-center align-items-center >
-            <ion-col col-md-4>
-              <h1 class="font-weight-bold">Home Based Online English Teacher</h1>
-              <p>Competitive Salary with Insurance and Bonuses</p>
-              <button color="mysec" ion-button>Start Now</button>  
-            </ion-col>
-            <ion-col col-md-5>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-        <ion-grid no-padding class=" invi-lg h-100">
-          <ion-row class="h-100 mb-5" justify-content-center align-items-end >
-            <ion-col class="mb-5 p-5" text-center>
-              <h1>HOME-BASED ONLINE ENGLISH TEACHER</h1>
-              <p>Earn as much as Php 14,000 per month with Insurance and Bonuses</p>
-              <button color="mysec" ion-button>Start Now</button>  
-            </ion-col>
-          </ion-row>
-        </ion-grid>
+      <ion-grid class="h-100 invi-md">
+        <ion-row class="h-100" justify-content-center align-items-center >
+          <ion-col col-md-4>
+            <h1 class="font-weight-bold">Home Based Online English Teacher</h1>
+            <p>Competitive Salary with Insurance and Bonuses</p>
+            <button large color="mysec" class="w-75" ion-button >Start Now</button>  
+          </ion-col>
+          <ion-col col-md-5>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid no-padding class=" invi-lg h-100">
+        <ion-row class="h-100 mb-5" justify-content-center align-items-end >
+              <ion-card ion-col class="mb-5 p-5" >
+                  <h1>HOME-BASED ONLINE ENGLISH TEACHER</h1>
+                  <p>Earn as much as Php 14,000 per month with Insurance and Bonuses</p>
+                  <button color="mysec" ion-button>Start Now</button>  
+            </ion-card>
+        </ion-row>
+      </ion-grid>
 </section>
+<section>
+  <ion-grid class="mt-5">
+    <ion-row justify-content-center>
+      <ion-col col-lg-3 col-md-9>
+          <ion-card class="mb-5 p-5" text-center>
+                <ion-icon color="myprime" name="cash"></ion-icon>
+                <ion-card-content>
+                    <h1>Competitive Pay</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus commodi dolorem officia quidem reprehenderit.</p>
+                </ion-card-content>
+              </ion-card>
+      </ion-col>
+      <ion-col col-lg-3  col-md-9>
+          <ion-card class="mb-5 p-5" text-center>
+              <ion-icon color="myprime" name="barcode"></ion-icon>
+              <ion-card-content>
+              <h1>Lots of Benefits</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus commodi dolorem officia quidem reprehenderit.</p>
+          </ion-card-content>
+            </ion-card>
+      </ion-col>
+      <ion-col col-lg-3  col-md-9>
+        <ion-card class="mb-5 p-5" text-center >
+            <ion-icon color="myprime" name="beaker"></ion-icon>
+            <ion-card-content>
+            <h1>HMO insurance</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa ratione consequuntur accusantium eaque recusandae?</p>
+          </ion-card-content>
+          </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row justify-content-center>
+        <ion-col col-lg-3  col-md-9>
+            <ion-card class="mb-5 p-5" text-center >
+                <ion-icon color="myprime" name="bulb"></ion-icon>
+                <ion-card-content>
+                  <h1>Find more students.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus commodi dolorem officia quidem reprehenderit.</p>
+          </ion-card-content>
+              </ion-card>
+        </ion-col>
+        <ion-col col-lg-3  col-md-9>
+            <ion-card class="mb-5 p-5" text-center >
+                <ion-icon color="myprime" name="calendar"></ion-icon>
+                <ion-card-content>
+                  <h1>Flexible schedule</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatibus commodi dolorem officia quidem reprehenderit.</p>
+          </ion-card-content>
+              </ion-card>
+        </ion-col>
+        <ion-col col-lg-3  col-md-9>
+          <ion-card class="mb-5 p-5" text-center >
+              <ion-icon color="myprime" name="thumbs-up"></ion-icon>
+              <ion-card-content>
+              <h1>Safety and security.</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi culpa ratione consequuntur accusantium eaque recusandae?</p>
+          </ion-card-content>
+            </ion-card>
+        </ion-col>
+      </ion-row>
+
+  </ion-grid>
+
+</section>
+<section >
+          <ion-grid>
+              <h1 text-center>Teacher's Application Form</h1>
+              <form  method="get">
+              <ion-row justify-content-center>
+                <ion-col class="my-4" col-sm-auto col-lg-5>
+                    <label >Frist Name</label>
+                    <input class="form-control w-100 p-3" type="text" value="">
+                </ion-col>
+                <ion-col class="my-4" col-sm-auto col-lg-4>
+                    <label>Last Name</label>
+                    <input class="form-control w-100 p-3" type="text">
+                  </ion-col>
+              </ion-row>
+              <ion-row justify-content-center>
+                  <ion-col class="my-4" col-sm-auto col-lg-9>
+                      <label>Complete Address</label>
+                      <input class="form-control w-100 p-3" type="text" value="">
+                  </ion-col>
+                </ion-row>
+                <ion-row justify-content-center>
+                  <ion-col class="my-4" col-sm-auto col-lg-3>
+                      <label>Email</label>
+                      <input class="form-control w-100 p-3" type="email" value="">
+                  </ion-col>
+                  <ion-col class="my-4" col-sm-auto col-lg-3>
+                    <label>Mobile No</label>
+                    <input class="form-control w-100 p-3" type="text">
+                  </ion-col>
+                  <ion-col class="my-4" col-sm-auto col-lg-3>
+                      <label>skype ID</label>
+                      <input class="form-control w-100 p-3" type="text">
+                    </ion-col>
+                </ion-row>
+                <ion-row justify-content-center>
+                  <ion-col class="my-4" col-sm-auto col-lg-5>
+                      <label>Tax Identification No</label>
+                      <input class="form-control w-100 p-3" type="email" value="">
+                  </ion-col>
+                  <ion-col class="my-4" col-sm-auto col-lg-4>
+                    <label>UMID no</label>
+                    <input class="form-control w-100 p-3" type="text">
+                  </ion-col>
+                </ion-row>
+                <ion-row justify-content-center>
+                  <ion-col class="my-4" col-sm-auto col-lg-3>
+                      <label>Nationality</label>
+                        <select class="w-100 p-3">
+                          <option >Filipino</option>
+                          <option >African</option>
+                          <option >American</option>
+                        </select>
+                  </ion-col>
+                  <ion-col class="my-4" col-sm-auto col-lg-3>
+                      <label>Gender</label>
+                      <select class="w-100 p-3">
+                        <option >Male</option>
+                        <option >Female</option>
+                        <option >Prefer Not Say</option>
+                      </select>
+                  </ion-col>
+                  <ion-col class="my-4" col-sm-auto col-lg-3>
+                    <label>Age</label>
+                    <input class="form-control w-100 p-3" type="number">
+                </ion-col>
+                </ion-row>
+                <ion-row class="mt-5" justify-content-center>
+                  <ion-col col-9>
+                      <h4 text-left>How did you here about us?</h4>
+                  </ion-col>
+                </ion-row>
+                <ion-row justify-content-center>
+                  <ion-col class="mb-0" col-sm-auto col-lg-5>
+                      <ion-list>
+                        <ion-item>
+                          <label><input type="checkbox"><span class="ml-5">Company Event</span></label>
+                        </ion-item>
+                        <ion-item>
+                            <label><input type="checkbox"><span class="ml-5">Facebook</span></label>
+                        </ion-item>
+                        <ion-item>
+                            <label><input type="checkbox"><span class="ml-5">Posters</span></label>
+                        </ion-item>
+                        <ion-item>
+                            <label><input type="checkbox"><span class="ml-5">News Paper</span></label>
+                        </ion-item>
+                        <ion-item>
+                            <label><input type="checkbox"><span class="ml-5">Flyers</span></label>
+                        </ion-item>
+                      </ion-list>
+                  </ion-col>
+                  <ion-col col-sm-auto col-lg-4>
+                      <ion-list>
+                        <ion-item>
+                            <label><input type="checkbox"><span class="ml-5">Internet</span></label>
+                        </ion-item>
+                        <ion-item>
+                            <label><input type="checkbox"><span class="ml-5">Friend</span></label>
+                        </ion-item>
+                        <ion-item>
+                            <label><input type="checkbox"><span class="ml-5">Employee</span></label>
+                        </ion-item>
+                        <ion-item>
+                          <label><input type="checkbox"><span class="ml-5">Refferal</span></label>
+                        </ion-item>
+                        <ion-item>
+                          <label><input type="checkbox"><span class="ml-5">Jobsite</span></label>
+                        </ion-item>
+                      </ion-list>
+                  </ion-col>
+                </ion-row>
+                <ion-row justify-content-center>
+                    <ion-col class="my-4"  col-9>
+                      <select class="w-100 p-3">
+                          <option >Assessment</option>
+                          <option >Which place would you really like to  visit and why?</option>
+                          <option>What do you usually do on the internet?</option>
+                          <option >Who is your favorite actor/actress and why?</option>
+                          <option>Why do you want to be a Home-based Online English Teacher?</option>
+                      </select>
+                    </ion-col>
+                  </ion-row>
+                  <ion-row justify-content-center>
+                      <ion-col class="my-4"  col-9>
+                        <textarea placeholder="Please Select one question and answer briefly" rows="15" class="w-100 p-3"></textarea>
+                      </ion-col>
+                    </ion-row>
+                    <ion-row justify-content-center>
+                        <ion-col class="my-4"  col-9>
+                            <label><input type="checkbox"><span class="ml-5">I hereby certify that I am a natural-born Filipino citizen, of legal age, and that all the above information is true and correct.</span></label>
+                        </ion-col>
+                      </ion-row>
+                <ion-row justify-content-center>
+                  <ion-col class="my-4"  col-9>
+                      <button color="myprime" block ion-button>Submit</button>
+                  </ion-col>
+                </ion-row>
+              </form>
+            </ion-grid>
+  </section>
 </ion-content>

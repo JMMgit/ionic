@@ -1,0 +1,27 @@
+.is-highlighted{
+    padding:20px 10px!important;
+    color: white!important;
+    background-color: map-get($colors,myprime)!important;
+    font-weight: bolder!important;
+}
+
+ion-buttons{ 
+    display: inline-block!important;
+
+    button:hover{ color:map-get($colors , myprime-light )!important }
+}
+
+ //for the main menu(Home, Career, Faq..) to be invisible at small devices
+@media screen and (max-width:576px) {
+    .invi-sm{ display: none!important }
+}
+
+//for the searchbar to be invisible at medium devices   
+@media screen and (max-width:991px) {
+    .invi-md{ display: none!important }
+}
+
+//for menu icon(humburger menu) to be invisible at large devices
+@media screen and (min-width:992px) {
+    .invi-lg{ display: none!important }
+}

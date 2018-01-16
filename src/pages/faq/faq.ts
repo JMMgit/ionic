@@ -1,25 +1,36 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {HomePage} from '../home/home';
 import {CareersPage} from '../careers/careers';
-import {FaqPage} from '../faq/faq';
 import {HowPage} from '../how/how';
 import {LoginPage} from '../login/login';
 
+/**
+ * Generated class for the FaqPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+
 @IonicPage()
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html',
+  selector: 'page-faq',
+  templateUrl: 'faq.html',
 })
-export class HomePage {
+export class FaqPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  goToCareers(){
-    this.navCtrl.setRoot(CareersPage);
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad FaqPage');
   }
 
-  goToFaq(){
+  goToHome(){
+    this.navCtrl.setRoot(HomePage);
+  }
+
+  goToCareers(){
     this.navCtrl.setRoot(FaqPage);
   }
 
