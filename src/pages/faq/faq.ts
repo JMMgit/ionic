@@ -31,7 +31,7 @@ export class FaqPage {
   }
 
   goToCareers(){
-    this.navCtrl.setRoot(FaqPage);
+    this.navCtrl.setRoot(CareersPage);
   }
 
   goToLogin(){
