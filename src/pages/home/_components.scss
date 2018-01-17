@@ -10,6 +10,7 @@ page-home {
         background-size: cover;
         
         h1{
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 3em;
             line-height: 1.5em;
             color: map-get($colors,myprime)!important
@@ -35,6 +36,18 @@ page-home {
         ion-icon{
             font-size: 4em;
         }
+        
+        transition: background-color 1s;
+    }
+
+    ion-slides{
+        background-color: map-get($colors,myprime);
+    }
+
+
+    footer{
+        color:white;
+        background-color: map-get($colors,myprime-dark)
     }
 
 }   

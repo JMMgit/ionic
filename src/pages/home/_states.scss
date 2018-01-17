@@ -1,21 +1,23 @@
 page-home {
 
-    ion-card:hover{
-        background-color:rgba(map-get($colors , myprime ),0.3)
+    .card-hover:hover{
+        background:rgba(map-get($colors , myprime ),0.3)!important;
     }
     .form-control:focus{ box-shadow:0 2px 0 -0.5px map-get($colors , myprime ) }
 
     select:focus,textarea:focus{
-        border:none;
         box-shadow:0 0 1px 2px rgba(map-get($colors , myprime ),0.5);
     }
 
 
     //for the searchbar to be invisible at medium devices   
     @media screen and (max-width:991px) {
-
+        
         .cover{
-            ion-card{background-color: rgba(map-get($colors,myprime-dark),0.8)!important}
+
+            ion-card{//for the tranparent banner when resize to medium screen
+                background: rgba(map-get($colors , myprime ),0.7)!important;
+            }
 
             h1{
                 color: white!important;

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {CareersPage} from '../careers/careers';
 import {FaqPage} from '../faq/faq';
-import {HowPage} from '../how/how';
+import {AboutPage} from '../about/about';
 import {LoginPage} from '../login/login';
 
 @IonicPage()
@@ -27,8 +27,7 @@ export class HomePage {
     this.navCtrl.setRoot(LoginPage);
   }
 
-  goToHow(){
-    this.navCtrl.setRoot(HowPage);
+  goToAbout(){
+    this.navCtrl.setRoot(AboutPage);
   }
-
 }

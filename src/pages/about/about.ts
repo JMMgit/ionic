@@ -6,7 +6,7 @@ import {CareersPage} from '../careers/careers';
 import {LoginPage} from '../login/login';
 
 /**
- * Generated class for the HowPage page.
+ * Generated class for the aboutPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -14,16 +14,16 @@ import {LoginPage} from '../login/login';
 
 @IonicPage()
 @Component({
-  selector: 'page-how',
-  templateUrl: 'how.html',
+  selector: 'page-about',
+  templateUrl: 'about.html',
 })
-export class HowPage {
+export class AboutPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad HowPage');
+    console.log('ionViewDidLoad AboutPage');
   }
 
   goToHome(){

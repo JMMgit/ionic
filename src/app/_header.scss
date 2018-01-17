@@ -7,8 +7,9 @@
 
 ion-buttons{ 
     display: inline-block!important;
-
-    button:hover{ color:map-get($colors , myprime-light )!important }
+    button:hover{ 
+        color:map-get($colors , myprime-light )!important;
+     }
 }
 
  //for the main menu(Home, Career, Faq..) to be invisible at small devices

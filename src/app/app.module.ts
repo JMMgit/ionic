@@ -8,7 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { CareersPage } from '../pages/careers/careers';
 import { FaqPage } from '../pages/faq/faq';
-import { HowPage } from '../pages/how/how';
+import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
 
 
@@ -19,7 +19,7 @@ import { LoginPage } from '../pages/login/login';
     HomePage,
     CareersPage,
     FaqPage,
-    HowPage,
+    AboutPage,
     LoginPage
 
   ],
@@ -33,7 +33,7 @@ import { LoginPage } from '../pages/login/login';
     HomePage,
     CareersPage,
     FaqPage,
-    HowPage,
+    AboutPage,
     LoginPage
   ],
   providers: [

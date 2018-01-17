@@ -10,12 +10,12 @@
         <ion-col text-lg-left text-sm-right class="ml-0 invi-sm h-100" col-sm-10 col-md-8 col-lg-6>
           <ion-buttons>
               <button class="pr-2" ion-button>Home</button>
-              <button (click)="goToHow()" class="px-2" ion-button>How to Use</button>
+              <button (click)="goToAbout()" class="px-2" ion-button>About Us</button>
               <button (click)="goToCareers()" class="px-2" ion-button>careers</button>
               <button (click)="goToFaq()" class="px-2" ion-button>faq</button>
               <button (click)="goToLogin()" class="px-2" ion-button>Login</button>            
           </ion-buttons>
-          <button  class="is-highlighted ml-3" ion-button>Apply Now</button> 
+          <button class="is-highlighted ml-3" ion-button>Apply Now</button> 
         </ion-col>
         <ion-col class="invi-md" col-lg-3> 
             <ion-searchbar showCancelButton="true"></ion-searchbar>
@@ -23,9 +23,11 @@
       </ion-row>
     </ion-grid>
   </ion-navbar>
-
 </ion-header>
 <ion-content>
+    <ion-fab class="mr-5 mb-3" right bottom>
+        <button ion-fab color="mysec"><ion-icon name="chatbubbles"></ion-icon></button>
+    </ion-fab>
 <section class="cover">
       <ion-grid class="h-100 invi-md">
         <ion-row class="h-100" justify-content-center align-items-center >
@@ -52,7 +54,7 @@
   <ion-grid class="mt-5">
     <ion-row justify-content-center>
       <ion-col col-lg-3 col-md-9>
-          <ion-card class="mb-5 p-5" text-center>
+          <ion-card class="mb-5 p-5 card-hover" text-center>
                 <ion-icon color="myprime" name="cash"></ion-icon>
                 <ion-card-content>
                     <h1>Competitive Pay</h1>
@@ -61,7 +63,7 @@
               </ion-card>
       </ion-col>
       <ion-col col-lg-3  col-md-9>
-          <ion-card class="mb-5 p-5" text-center>
+          <ion-card class="mb-5 p-5 card-hover" text-center>
               <ion-icon color="myprime" name="barcode"></ion-icon>
               <ion-card-content>
               <h1>Lots of Benefits</h1>
@@ -70,7 +72,7 @@
             </ion-card>
       </ion-col>
       <ion-col col-lg-3  col-md-9>
-        <ion-card class="mb-5 p-5" text-center >
+        <ion-card class="mb-5 p-5 card-hover" text-center >
             <ion-icon color="myprime" name="beaker"></ion-icon>
             <ion-card-content>
             <h1>HMO insurance</h1>
@@ -81,7 +83,7 @@
     </ion-row>
     <ion-row justify-content-center>
         <ion-col col-lg-3  col-md-9>
-            <ion-card class="mb-5 p-5" text-center >
+            <ion-card class="mb-5 p-5 card-hover" text-center >
                 <ion-icon color="myprime" name="bulb"></ion-icon>
                 <ion-card-content>
                   <h1>Find more students.</h1>
@@ -90,7 +92,7 @@
               </ion-card>
         </ion-col>
         <ion-col col-lg-3  col-md-9>
-            <ion-card class="mb-5 p-5" text-center >
+            <ion-card class="mb-5 p-5 card-hover" text-center >
                 <ion-icon color="myprime" name="calendar"></ion-icon>
                 <ion-card-content>
                   <h1>Flexible schedule</h1>
@@ -99,7 +101,7 @@
               </ion-card>
         </ion-col>
         <ion-col col-lg-3  col-md-9>
-          <ion-card class="mb-5 p-5" text-center >
+          <ion-card class="mb-5 p-5 card-hover" text-center >
               <ion-icon color="myprime" name="thumbs-up"></ion-icon>
               <ion-card-content>
               <h1>Safety and security.</h1>
@@ -110,8 +112,27 @@
       </ion-row>
 
   </ion-grid>
-
 </section>
+<!-- <ion-grid >
+  <ion-row justify-content-center>
+    <ion-col col-lg-9 col-md-auto>
+        <ion-card>
+            <ion-slides pager centerSlides="true" loop speed="1000">
+                <ion-slide>
+                    <img src="../assets/imgs/logo.png">
+                    <h1>Jasmin Mendoza</h1>
+                    <h2>December 20, 2017</h2>
+                    <p>I'm starting a month of honesty last month. This is the first time I've ever heard of English, most important. No matter what the textbook is, or the course is about. After five tests, Saramu chose Cassie from the Good Talk. I really like the personality is calm, and I am following a lot of people. Maybe I'll keep on doing things until I do not tell him that he will stop. Thanks to my child.</p>
+                </ion-slide>
+                <ion-slide>
+                  <h1>Slide 2</h1>
+                </ion-slide>
+            </ion-slides>
+        </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid> -->
+
 <section >
           <ion-grid>
               <h1 text-center>Teacher's Application Form</h1>
@@ -185,40 +206,50 @@
                 </ion-row>
                 <ion-row justify-content-center>
                   <ion-col class="mb-0" col-sm-auto col-lg-5>
-                      <ion-list>
-                        <ion-item>
-                          <label><input type="checkbox"><span class="ml-5">Company Event</span></label>
+                      <ion-list radio-group >
+                        <ion-item>     
+                          <ion-radio value="Company Event"></ion-radio>
+                          <ion-label text-left>Company Event</ion-label>  
                         </ion-item>
                         <ion-item>
-                            <label><input type="checkbox"><span class="ml-5">Facebook</span></label>
-                        </ion-item>
+                          <ion-label>Facebook</ion-label>
+                          <ion-radio value="Facebook"></ion-radio>
+                          </ion-item>
                         <ion-item>
-                            <label><input type="checkbox"><span class="ml-5">Posters</span></label>
-                        </ion-item>
+                            <ion-label>Posters</ion-label>
+                            <ion-radio value="Posters"></ion-radio>
+                          </ion-item>
                         <ion-item>
-                            <label><input type="checkbox"><span class="ml-5">News Paper</span></label>
-                        </ion-item>
+                          <ion-label>News Paper</ion-label>
+                          <ion-radio value="News Paper"></ion-radio>
+                          </ion-item>
                         <ion-item>
-                            <label><input type="checkbox"><span class="ml-5">Flyers</span></label>
-                        </ion-item>
-                      </ion-list>
+                          <ion-label>Flyers</ion-label>
+                          <ion-radio value="Flyers"></ion-radio>
+                          </ion-item>
+                        </ion-list>
                   </ion-col>
                   <ion-col col-sm-auto col-lg-4>
-                      <ion-list>
+                    <ion-list radio-group>
                         <ion-item>
-                            <label><input type="checkbox"><span class="ml-5">Internet</span></label>
+                            <ion-label>Internet</ion-label>
+                          <ion-radio></ion-radio>
                         </ion-item>
                         <ion-item>
-                            <label><input type="checkbox"><span class="ml-5">Friend</span></label>
+                            <ion-label>Friend</ion-label>
+                          <ion-radio ></ion-radio>
                         </ion-item>
                         <ion-item>
-                            <label><input type="checkbox"><span class="ml-5">Employee</span></label>
+                            <ion-label>Employee</ion-label>
+                          <ion-radio ></ion-radio>
                         </ion-item>
                         <ion-item>
-                          <label><input type="checkbox"><span class="ml-5">Refferal</span></label>
+                            <ion-label>Referral</ion-label>
+                          <ion-radio ></ion-radio>
                         </ion-item>
                         <ion-item>
-                          <label><input type="checkbox"><span class="ml-5">Jobsite</span></label>
+                            <ion-label>Jobsite</ion-label>
+                            <ion-radio ></ion-radio>
                         </ion-item>
                       </ion-list>
                   </ion-col>
@@ -246,10 +277,13 @@
                       </ion-row>
                 <ion-row justify-content-center>
                   <ion-col class="my-4"  col-9>
-                      <button color="myprime" block ion-button>Submit</button>
+                      <button color="mysec" block ion-button>Submit</button>
                   </ion-col>
                 </ion-row>
               </form>
             </ion-grid>
   </section>
+  <footer class="p-3">
+      <p text-center>&copy;Copyright 2018. All Rights Reserved</p>
+  </footer>
 </ion-content>
