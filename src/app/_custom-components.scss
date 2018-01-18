@@ -1,19 +1,38 @@
+$theme-colors: (
+  "myprime":#22bfec,
+  "myprime-light":#6ff2ff,
+  "myprime-dark":#008fb9,
+  "mysec":#ff9800,
+  "mysec-light":#ffc947,
+  "mysec-dark":#c66900,
+  "fb": #3B5998 ,
+  "google":#d34836
+);
+
 .is-highlighted{
-    padding:20px 10px!important;
-    color: white!important;
     background-color: map-get($colors,myprime)!important;
-    font-weight: bolder!important;
 }
 
 ion-buttons{ 
-    display: inline-block!important;
     button:hover{ 
         color:map-get($colors , myprime-light )!important;
      }
 }
 
+.custom-card{
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+              0 3px 1px -2px rgba(0, 0, 0, 0.2),
+                0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+
+  .card-md .item-md.item-block:not(:last-child) .item-inner {
+    border-bottom: 1px solid #dedede;
+  }
+  
  //for the main menu(Home, Career, Faq..) to be invisible at small devices
-@media screen and (max-width:576px) {
+@media screen and (max-width:575px) {
     .invi-sm{ display: none!important }
 }
 

@@ -4,6 +4,7 @@ import {HomePage} from '../home/home';
 import {FaqPage} from '../faq/faq';
 import {AboutPage} from '../about/about';
 import {CareersPage} from '../careers/careers';
+import {ProfilePage} from '../profile/profile';
 
 /**
  * Generated class for the LoginPage page.
@@ -40,5 +41,10 @@ export class LoginPage {
   
   goToAbout(){
     this.navCtrl.setRoot(AboutPage);
+  }
+
+    
+  goToProfile(){
+    this.navCtrl.setRoot(ProfilePage);
   }
 }

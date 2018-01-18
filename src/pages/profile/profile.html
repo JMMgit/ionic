@@ -1,0 +1,160 @@
+  <ion-header>
+      <ion-navbar color="myprime">
+        <div class="container-fluid">
+          <div class="row my-3 justify-content-center align-items-center">
+            <div class="col-lg-4">
+                  <ion-searchbar showCancelButton="true"></ion-searchbar>
+            </div>
+            <div class="col-lg-8"> 
+                <ion-buttons class="text-right mr-5">
+                    <button (click)="goToHome()" class="px-3" ion-button icon-only>
+                        <ion-icon class="pr-3" name="home"></ion-icon>
+                        Home
+                    </button>
+                    <button class="px-3" ion-button icon-only>
+                        <ion-icon class="pr-3" name="contact"></ion-icon>
+                        profile
+                    </button>
+                    <button class="px-3" ion-button icon-only>
+                        <ion-icon class="pr-3" name="mail"></ion-icon>
+                        messages
+                    </button>
+                    <button class="px-3" ion-button icon-only>
+                        <ion-icon name="notifications"></ion-icon>
+                        notifications
+                    </button>
+                    <button class="px-3" ion-button icon-only>
+                        <ion-icon name="more"></ion-icon>
+                    </button>
+                </ion-buttons> 
+            </div>
+          </div>
+        </div>
+      </ion-navbar>
+    </ion-header>
+
+
+<ion-content padding>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-3">
+        <ion-card>
+            <ion-list no-lines>
+                <ion-item>
+                    <ion-thumbnail item-start>
+                      <ion-avatar item-start>
+                          <img src="assets/imgs/sample.jpeg">
+                        </ion-avatar>
+                    </ion-thumbnail>
+                    <h2>Mark Dimatulac</h2>
+                    <p>Web Developer</p>
+                  </ion-item>
+            </ion-list>
+        </ion-card>
+        <ion-card>
+            <ion-list no-lines>
+                <ion-item-group class="pr-3">
+                    <button ion-item><ion-icon name="mail" color="mysec" item-start></ion-icon>Mailbox<ion-badge item-end>4</ion-badge></button>
+                    <button ion-item><ion-icon name="people" color="mysec" item-start></ion-icon>Teachers</button>
+                    <button ion-item><ion-icon name="calendar" color="mysec" item-start></ion-icon>Schedule<ion-badge item-end>4</ion-badge></button>
+                    <button ion-item><ion-icon name="person" color="mysec" item-start></ion-icon>Students</button>
+                    <button ion-item><ion-icon name="cash" color="mysec" item-start></ion-icon>Payments</button>
+                </ion-item-group>
+            </ion-list>
+        </ion-card>
+        <ion-card>
+            <ion-list no-lines>
+                <ion-item-group class="pr-3">
+                    <button ion-item><ion-icon name="help" color="mysec" item-start></ion-icon>Help</button>
+                    <button ion-item><ion-icon name="settings" color="mysec"  item-start></ion-icon> Settings</button>
+                    <button detail-none ion-item><ion-icon name="power" color="mysec"  item-start></ion-icon> Logout</button>
+                </ion-item-group>
+            </ion-list>
+        </ion-card>
+    </div>
+    <div class="col-9">
+      <ion-card>
+          <ion-list>
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <ion-avatar item-start>
+                      <img src="assets/imgs/sample.jpeg">
+                    </ion-avatar>
+                </ion-thumbnail>
+                <h2>Juan Sebastian</h2>
+                <p>Metro Manila 1988</p>
+                <button (click)="showModal()" ion-button clear item-end>View</button>
+              </ion-item>
+          
+              <ion-item>
+                <ion-thumbnail item-start>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/logo.png">
+                      </ion-avatar>
+                </ion-thumbnail>
+                <h2>Agustin Del mundo</h2>
+                <p>Metro Manila 1988</p>
+                <button ion-button clear item-end>View</button>
+              </ion-item>
+          
+              <ion-item>
+                <ion-thumbnail item-start>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/sample.jpeg">
+                      </ion-avatar>
+                </ion-thumbnail>
+                <h2>John Smith</h2>
+                <p>Metro Manila 1988</p>
+                <button ion-button clear item-end>View</button>
+              </ion-item>
+          
+              <ion-item>
+                <ion-thumbnail item-start>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/logo.png">
+                      </ion-avatar>
+                </ion-thumbnail>
+                <h2>Agustin Del mundo</h2>
+                <p>Metro Manila 1988</p>
+                <button ion-button clear item-end>View</button>
+              </ion-item>
+          
+              <ion-item>
+                <ion-thumbnail item-start>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/sample.jpeg">
+                      </ion-avatar>
+                </ion-thumbnail>
+                <h2>Juan Sebastian</h2>
+                <p>Metro Manila 1988</p>
+                <button ion-button clear item-end>View</button>
+              </ion-item>
+          
+              <ion-item>
+                <ion-thumbnail item-start>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/sample.jpeg">
+                      </ion-avatar>
+                </ion-thumbnail>
+                <h2>John Smith</h2>
+                <p>Metro Manila 1988</p>
+                <button ion-button clear item-end>View</button>
+              </ion-item>
+          
+              <ion-item>
+                <ion-thumbnail item-start>
+                    <ion-avatar item-start>
+                        <img src="assets/imgs/sample.jpeg">
+                      </ion-avatar>
+                </ion-thumbnail>
+                <h2>John Smith</h2>
+                <p>Metro Manila 1988</p>
+                <button ion-button clear item-end>View</button>
+              </ion-item>
+          
+            </ion-list>
+      </ion-card>
+      </div>
+  </div>
+</div>
+</ion-content>

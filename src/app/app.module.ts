@@ -10,6 +10,7 @@ import { CareersPage } from '../pages/careers/careers';
 import { FaqPage } from '../pages/faq/faq';
 import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
+import { ProfilePage } from '../pages/profile/profile';
 
 
 
@@ -20,7 +21,8 @@ import { LoginPage } from '../pages/login/login';
     CareersPage,
     FaqPage,
     AboutPage,
-    LoginPage
+    LoginPage,
+    ProfilePage
 
   ],
   imports: [
@@ -34,7 +36,8 @@ import { LoginPage } from '../pages/login/login';
     CareersPage,
     FaqPage,
     AboutPage,
-    LoginPage
+    LoginPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,

@@ -2,7 +2,6 @@ page-home {
 
 
     .cover{
-        width: 100%;
         height: 90vh;
         background: url('../assets/imgs/cover.png');
         background-position: top;
@@ -23,14 +22,7 @@ page-home {
         }
     }
 
-    .form-control{
-        border:none;
-        box-shadow:0 1px 0 -0.4px rgba(black,0.5);
-    }
 
-    select,textarea{
-        box-shadow:0 0 0.5px 0.3px rgba(black,0.5);
-    }
 
     ion-card{
         ion-icon{

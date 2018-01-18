@@ -1,57 +1,66 @@
-<ion-header>
-    <ion-navbar  color="myprime-dark">
-      <ion-grid no-padding>
-        <ion-row class="my-3" justify-content-center align-items-center>
-          <ion-col class="invi-lg" col-md-1>
+  <ion-header>
+    <ion-navbar color="myprime-dark">
+      <div class="container">
+        <div class="row my-3 justify-content-center align-items-center">
+          <div class="invi-lg col-md-1 col-sm-1">
             <button ion-button menuToggle icon-only>
                 <ion-icon name='menu'></ion-icon>
             </button> 
-          </ion-col>
-          <ion-col text-lg-left text-sm-right class="ml-0 invi-sm" col-sm-10 col-md-8 col-lg-6>
-            <ion-buttons>
-                <button (click)="goToHome()" class="pr-2" ion-button>Home</button>
+          </div>
+          <div class="text-lg-left text-sm-right ml-0 invi-sm h-100 col-sm-11 col-md-11 col-lg-8">
+            <ion-buttons class="d-inline-block">
+              <button (click)="goToHome()" class="pr-2" ion-button>Home</button>
                 <button  (click)="goToAbout()" class="px-2" ion-button>About Us</button>
                 <button (click)="goToCareers()" class="px-2" ion-button>careers</button>
                 <button (click)="goToFaq()" class="px-2" ion-button>faq</button>
-                <button class="px-2" ion-button>Login</button>            
+                <button class="px-2" ion-button>Login</button>           
             </ion-buttons>
-            <button class="is-highlighted ml-3" ion-button>Apply now</button> 
-          </ion-col>
-          <ion-col class="invi-md" col-lg-3> 
+            <button class="is-highlighted ml-3 py-4" ion-button>Apply Now</button> 
+          </div>
+          <div class="invi-md col-lg-4"> 
               <ion-searchbar showCancelButton="true"></ion-searchbar>
-          </ion-col>
-        </ion-row>
-      </ion-grid>
+          </div>
+        </div>
+      </div>
     </ion-navbar>
-  
   </ion-header>
 
   <ion-content>
       <ion-fab class="mr-5 mb-3" right bottom>
           <button ion-fab color="mysec"><ion-icon name="chatbubbles"></ion-icon></button>
       </ion-fab>
-    <ion-grid>
-      <ion-row justify-content-center>
-        <ion-col col-md-4>
-            <ion-card class="p-5">
-              <h1 class="font-weight-light" text-center ion-text color="myprime"> SIGN IN</h1>
-                <form>
-                  <ion-label >Email</ion-label>
-                  <input class="form-control d-block mb-5 w-100" type="Email">
-                  <ion-label >Password</ion-label>
-                  <input class="form-control d-block w-100"  type="password">
-                  <button large block class="my-4" color="mysec" ion-button>Login</button>
-                  <ion-label text-center><ion-checkbox class="mr-3"></ion-checkbox>Remember me</ion-label>
-                  <ion-row text-center justify-content-between>
-                      <button ion-button clear>Not Registered?</button>
-                      <button  ion-button clear>Forgot Password?</button>
-                  </ion-row>
-                  <ion-label text-center>Sign In with</ion-label>
-                  <button block color="fb"  class="my-3" ion-button><ion-icon class="mr-3" name="logo-facebook"></ion-icon>Facebook</button>
-                  <button block color="google" class="my-3" ion-button>  <ion-icon class="mr-2" name="logo-googleplus"></ion-icon>Google Plus</button>
-                </form>
-              </ion-card>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <div class="container">
+      <div class="row justify-content-center my-auto">
+        <div class="col-md-5 col-sm-auto">
+          <ion-card class="p-5">
+            <h1 class="font-weight-light" text-center ion-text color="myprime"> SIGN IN</h1>
+              <form>
+                  <ion-list class="text-center">
+
+                      <ion-item  class="pl-0 mx-3">
+                        <ion-label floating>Username</ion-label>
+                        <ion-input type="text"></ion-input>
+                      </ion-item>
+                    
+                      <ion-item   class="pl-0 mx-3">
+                        <ion-label floating>Password</ion-label>
+                        <ion-input type="password"></ion-input>
+                      </ion-item>
+                      
+                    
+                    </ion-list>
+                <button (click)="goToProfile()" large block class="my-4" color="mysec" ion-button>Login</button>
+                <ion-label text-center><ion-checkbox class="mr-3"></ion-checkbox>Remember me</ion-label>
+                <div class="row text-center justify-content-between">
+                    <button ion-button clear>Not Registered?</button>
+                    <button  ion-button clear>Forgot Password?</button>
+                </div>
+                <ion-label text-center>Sign In with</ion-label>
+                <button block color="fb"  class="my-3" ion-button><ion-icon class="mr-3" name="logo-facebook"></ion-icon>Facebook</button>
+                <button block color="google" class="my-3" ion-button>  <ion-icon class="mr-2" name="logo-googleplus"></ion-icon>Google Plus</button>
+              </form>
+            </ion-card>
+          </div>
+      </div>
+    </div>
   </ion-content>
