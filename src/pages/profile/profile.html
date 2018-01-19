@@ -2,26 +2,31 @@
       <ion-navbar color="myprime">
         <div class="container-fluid">
           <div class="row my-3 justify-content-center align-items-center">
-            <div class="col-lg-4">
+                <div class="invi-lg col-md-1 col-sm-1">
+                    <button ion-button menuToggle icon-only>
+                        <ion-icon name='menu'></ion-icon>
+                    </button> 
+                </div>
+            <div class="col-lg-4 col-md-3 invi-md">
                   <ion-searchbar showCancelButton="true"></ion-searchbar>
             </div>
-            <div class="col-lg-8"> 
+            <div class="col-lg-8 col-md-9 col-sm-11 invi-sm"> 
                 <ion-buttons class="text-right mr-5">
                     <button (click)="goToHome()" class="px-3" ion-button icon-only>
                         <ion-icon class="pr-3" name="home"></ion-icon>
-                        Home
+                        <span class="invi-md">Home</span>
                     </button>
                     <button class="px-3" ion-button icon-only>
                         <ion-icon class="pr-3" name="contact"></ion-icon>
-                        profile
+                        <span class="invi-md">profile</span>
                     </button>
-                    <button class="px-3" ion-button icon-only>
+                    <button (click)="gotoMail()" class="px-3" ion-button icon-only>
                         <ion-icon class="pr-3" name="mail"></ion-icon>
-                        messages
+                        <span class="invi-md">Messages</span>
                     </button>
                     <button class="px-3" ion-button icon-only>
                         <ion-icon name="notifications"></ion-icon>
-                        notifications
+                        <span class="invi-md">Notification</span>
                     </button>
                     <button class="px-3" ion-button icon-only>
                         <ion-icon name="more"></ion-icon>
@@ -32,12 +37,10 @@
         </div>
       </ion-navbar>
     </ion-header>
-
-
 <ion-content padding>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-3">
+    <div class="col-lg-3">
         <ion-card>
             <ion-list no-lines>
                 <ion-item>
@@ -54,7 +57,7 @@
         <ion-card>
             <ion-list no-lines>
                 <ion-item-group class="pr-3">
-                    <button ion-item><ion-icon name="mail" color="mysec" item-start></ion-icon>Mailbox<ion-badge item-end>4</ion-badge></button>
+                    <button (click)="gotoMail()" ion-item><ion-icon name="mail" color="mysec" item-start></ion-icon>Mailbox<ion-badge item-end>4</ion-badge></button>
                     <button ion-item><ion-icon name="people" color="mysec" item-start></ion-icon>Teachers</button>
                     <button ion-item><ion-icon name="calendar" color="mysec" item-start></ion-icon>Schedule<ion-badge item-end>4</ion-badge></button>
                     <button ion-item><ion-icon name="person" color="mysec" item-start></ion-icon>Students</button>
@@ -67,12 +70,12 @@
                 <ion-item-group class="pr-3">
                     <button ion-item><ion-icon name="help" color="mysec" item-start></ion-icon>Help</button>
                     <button ion-item><ion-icon name="settings" color="mysec"  item-start></ion-icon> Settings</button>
-                    <button detail-none ion-item><ion-icon name="power" color="mysec"  item-start></ion-icon> Logout</button>
+                    <button (click)="goToLogin()" detail-none ion-item><ion-icon name="power" color="mysec"  item-start></ion-icon> Logout</button>
                 </ion-item-group>
             </ion-list>
         </ion-card>
     </div>
-    <div class="col-9">
+    <div class="col-lg-9">
       <ion-card>
           <ion-list>
               <ion-item>
@@ -83,7 +86,7 @@
                 </ion-thumbnail>
                 <h2>Juan Sebastian</h2>
                 <p>Metro Manila 1988</p>
-                <button (click)="showModal()" ion-button clear item-end>View</button>
+                <button ion-button clear item-end>View</button>
               </ion-item>
           
               <ion-item>

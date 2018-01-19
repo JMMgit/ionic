@@ -4,6 +4,11 @@ page-home {
         background:rgba(map-get($colors , myprime ),0.3)!important;
     }
 
+    .rotate:hover{
+        ion-card{
+            transform: scale(1.04, 1.04);
+        }
+    }
     //for the searchbar to be invisible at medium devices   
     @media screen and (max-width:991px) {
         

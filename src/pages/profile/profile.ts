@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import {HomePage} from '../home/home';
+import {MailboxPage} from '../mailbox/mailbox';
 import {LoginPage} from '../login/login';
 
 /**
@@ -28,7 +29,15 @@ export class ProfilePage {
   }
 
   showModal() {
-    let modal = this.modalCtrl.create(LoginPage);
+    let modal = this.modalCtrl.create(MailboxPage);
     modal.present();
+  }
+
+  gotoMail() {
+    this.navCtrl.setRoot(MailboxPage);
+  }
+  
+  goToLogin(){
+    this.navCtrl.setRoot(LoginPage);
   }
 }

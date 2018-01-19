@@ -1,6 +1,5 @@
 page-home {
 
-
     .cover{
         height: 90vh;
         background: url('../assets/imgs/cover.png');
@@ -9,7 +8,7 @@ page-home {
         background-size: cover;
         
         h1{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: cursive,Arial, Helvetica, sans-serif;
             font-size: 3em;
             line-height: 1.5em;
             color: map-get($colors,myprime)!important
@@ -28,16 +27,11 @@ page-home {
         ion-icon{
             font-size: 4em;
         }
-        
-        transition: background-color 1s;
+
+        transition: all 0.2s ease-in-out;
     }
 
-    ion-slides{
-        background-color: map-get($colors,myprime);
-    }
-
-
-    footer{
+   footer{
         color:white;
         background-color: map-get($colors,myprime-dark)
     }

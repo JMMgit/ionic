@@ -11,6 +11,8 @@ import { FaqPage } from '../pages/faq/faq';
 import { AboutPage } from '../pages/about/about';
 import { LoginPage } from '../pages/login/login';
 import { ProfilePage } from '../pages/profile/profile';
+import { MailboxPage } from '../pages/mailbox/mailbox';
+import { ChatPage } from '../pages/chat/chat';
 
 
 
@@ -22,7 +24,9 @@ import { ProfilePage } from '../pages/profile/profile';
     FaqPage,
     AboutPage,
     LoginPage,
-    ProfilePage
+    ProfilePage,
+    MailboxPage,
+    ChatPage
 
   ],
   imports: [
@@ -37,7 +41,9 @@ import { ProfilePage } from '../pages/profile/profile';
     FaqPage,
     AboutPage,
     LoginPage,
-    ProfilePage
+    ProfilePage,
+    MailboxPage,
+    ChatPage
   ],
   providers: [
     StatusBar,

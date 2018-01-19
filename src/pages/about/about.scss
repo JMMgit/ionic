@@ -1,0 +1,20 @@
+page-about {
+    .card-hover:hover{
+        background:rgba(map-get($colors , myprime ),0.3)!important;
+    }
+
+    .rotate:hover{
+        ion-card{
+            transform: scale(1.04, 1.04);
+        }
+    }
+
+    ion-card{
+        ion-icon{
+            font-size: 4em;
+        }
+
+        transition: all 0.2s ease-in-out;
+    }
+
+}
