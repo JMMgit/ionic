@@ -1,0 +1,26 @@
+<!-- Generated template for the MyHeaderComponent component -->
+  <ion-navbar color="myprime-dark">
+    <div class="container">
+      <div class="row my-3 justify-content-between align-items-center">
+        <div class="invi-lg col-md-1 col-sm-1">
+          <button ion-button menuToggle icon-only>
+              <ion-icon name='menu'></ion-icon>
+          </button> 
+        </div>
+        <div class="text-lg-left text-sm-right invi-sm h-100 col-sm-11 col-md-11 col-lg-8">
+          <ion-buttons class="d-inline-block">
+              <a href="/#/home" class="pr-2" ion-button>Home</a>
+              <a href="/#/about" class="px-2" ion-button>About us</a>
+              <a href="/#/careers" (click)="goToCareers()" class="px-2" ion-button>careers</a>
+              <a href="/#/faq" (click)="goToFaq()" class="px-2" ion-button>faq</a>
+              <a href="/#/login" (click)="goToLogin()" class="px-2" ion-button>Login</a>            
+          </ion-buttons>
+          <button class="is-highlighted ml-3 py-4" ion-button>Apply Now</button> 
+        </div>
+        <div class="invi-md col-lg-4"> 
+            <ion-searchbar showCancelButton="true"></ion-searchbar>
+        </div>
+      </div>
+    </div>
+  </ion-navbar>
+

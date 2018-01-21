@@ -1,17 +1,7 @@
 import { Component } from '@angular/core';
 import {  IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
-import {HomePage} from '../home/home';
-import {FaqPage} from '../faq/faq';
-import {AboutPage} from '../about/about';
-import {LoginPage} from '../login/login';
 
-/**
- * Generated class for the CareersPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -53,18 +43,29 @@ export class CareersPage {
   }
 
   goToHome(){
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.setRoot("HomePage");
   }
 
   goToFaq(){
-    this.navCtrl.setRoot(FaqPage);
+    this.navCtrl.setRoot("FaqPage");
   }
+
+  goToCareers(){
+    this.navCtrl.setRoot("CareersPage");
+  }
+  
+  goToAbout(){
+    this.navCtrl.setRoot("AboutPage");
+  }
+
+    
+  goToProfile(){
+    this.navCtrl.setRoot("ProfilePage");
+  }
+
 
   goToLogin(){
-    this.navCtrl.setRoot(LoginPage);
+    this.navCtrl.setRoot("LoginPage");
   }
 
-  goToAbout(){
-    this.navCtrl.setRoot(AboutPage);
-  }
 }

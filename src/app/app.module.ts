@@ -5,45 +5,22 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { CareersPage } from '../pages/careers/careers';
-import { FaqPage } from '../pages/faq/faq';
-import { AboutPage } from '../pages/about/about';
-import { LoginPage } from '../pages/login/login';
-import { ProfilePage } from '../pages/profile/profile';
-import { MailboxPage } from '../pages/mailbox/mailbox';
-import { ChatPage } from '../pages/chat/chat';
-
-
+import { ComponentsModule } from '../components/components.module';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    CareersPage,
-    FaqPage,
-    AboutPage,
-    LoginPage,
-    ProfilePage,
-    MailboxPage,
-    ChatPage
-
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    ComponentsModule
+
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    CareersPage,
-    FaqPage,
-    AboutPage,
-    LoginPage,
-    ProfilePage,
-    MailboxPage,
-    ChatPage
+
   ],
   providers: [
     StatusBar,

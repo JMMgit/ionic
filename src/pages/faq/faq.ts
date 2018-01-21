@@ -1,16 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {HomePage} from '../home/home';
-import {CareersPage} from '../careers/careers';
-import {AboutPage} from '../about/about';
-import {LoginPage} from '../login/login';
-
-/**
- * Generated class for the FaqPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -27,19 +16,29 @@ export class FaqPage {
   }
 
   goToHome(){
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.setRoot("HomePage");
+  }
+
+  goToFaq(){
+    this.navCtrl.setRoot("FaqPage");
   }
 
   goToCareers(){
-    this.navCtrl.setRoot(CareersPage);
+    this.navCtrl.setRoot("CareersPage");
   }
+  
+  goToAbout(){
+    this.navCtrl.setRoot("AboutPage");
+  }
+
+    
+  goToProfile(){
+    this.navCtrl.setRoot("ProfilePage");
+  }
+
 
   goToLogin(){
-    this.navCtrl.setRoot(LoginPage);
-  }
-
-  goToAbout(){
-    this.navCtrl.setRoot(AboutPage);
+    this.navCtrl.setRoot("LoginPage");
   }
 
 }

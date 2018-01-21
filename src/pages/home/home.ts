@@ -1,10 +1,5 @@
 import { Component } from '@angular/core';
 import { PopoverController,IonicPage, NavController, NavParams } from 'ionic-angular';
-import {CareersPage} from '../careers/careers';
-import {FaqPage} from '../faq/faq';
-import {AboutPage} from '../about/about';
-import {LoginPage} from '../login/login';
-import {ChatPage} from '../chat/chat';
 
 @IonicPage()
 @Component({
@@ -17,26 +12,34 @@ export class HomePage {
   }
 
   showChat(myEvent) {
-    let popover = this.popoverCtrl.create(ChatPage);
+    let popover = this.popoverCtrl.create("ChatPage");
     popover.present({
       ev: myEvent
     });
   }
-
-  goToCareers(){
-    this.navCtrl.setRoot(CareersPage);
+  goToHome(){
+    this.navCtrl.setRoot("HomePage");
   }
 
   goToFaq(){
-    this.navCtrl.setRoot(FaqPage);
+    this.navCtrl.setRoot("FaqPage");
   }
+
+  goToCareers(){
+    this.navCtrl.setRoot("CareersPage");
+  }
+  
+  goToAbout(){
+    this.navCtrl.setRoot("AboutPage");
+  }
+
+    
+  goToProfile(){
+    this.navCtrl.setRoot("ProfilePage");
+  }
+
 
   goToLogin(){
-    this.navCtrl.setRoot(LoginPage);
+    this.navCtrl.setRoot("LoginPage");
   }
-
-  goToAbout(){
-    this.navCtrl.setRoot(AboutPage);
-  }
-
 }

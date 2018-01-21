@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the ChatPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @IonicPage()
 @Component({
   selector: 'page-chat',
@@ -22,4 +15,29 @@ export class ChatPage {
     console.log('ionViewDidLoad ChatPage');
   }
 
+  goToHome(){
+    this.navCtrl.setRoot("HomePage");
+  }
+
+  goToFaq(){
+    this.navCtrl.setRoot("FaqPage");
+  }
+
+  goToCareers(){
+    this.navCtrl.setRoot("CareersPage");
+  }
+  
+  goToAbout(){
+    this.navCtrl.setRoot("AboutPage");
+  }
+
+    
+  goToProfile(){
+    this.navCtrl.setRoot("ProfilePage");
+  }
+
+
+  goToLogin(){
+    this.navCtrl.setRoot("LoginPage");
+  }
 }

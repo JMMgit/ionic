@@ -14,7 +14,7 @@ $theme-colors: (
 }
 
 ion-buttons{ 
-    button:hover{ 
+    a:hover{ 
         color:map-get($colors , myprime-light )!important;
      }
 }
