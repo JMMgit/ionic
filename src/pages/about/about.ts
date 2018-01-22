@@ -14,30 +14,4 @@ export class AboutPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad AboutPage');
   }
- 
-  goToHome(){
-    this.navCtrl.setRoot("HomePage");
-  }
-
-  goToFaq(){
-    this.navCtrl.setRoot("FaqPage");
-  }
-
-  goToCareers(){
-    this.navCtrl.setRoot("CareersPage");
-  }
-  
-  goToAbout(){
-    this.navCtrl.setRoot("AboutPage");
-  }
-
-    
-  goToProfile(){
-    this.navCtrl.setRoot("ProfilePage");
-  }
-
-
-  goToLogin(){
-    this.navCtrl.setRoot("LoginPage");
-  }
-}
+ }

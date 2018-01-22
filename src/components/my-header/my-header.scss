@@ -1,3 +1,13 @@
 my-header {
+    
+    .is-highlighted{
+        background-color: map-get($colors,myprime)!important;
+        box-shadow: none!important;
+    }
 
+    ion-buttons{ 
+        a:hover{ 
+            color:map-get($colors , myprime-light )!important;
+         }
+    }
 }

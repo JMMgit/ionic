@@ -2,16 +2,30 @@ page-home {
 
     .cover{
         height: 90vh;
-        background: url('../assets/imgs/cover.png');
-        background-position: top;
-        background-repeat:no-repeat;
-        background-size: cover;
+        background: linear-gradient(273deg, #22bfec, #6ff2ff, #008fb9, #8e24aa, #c158dc);
+        background-size: 600% 600%;
+
+        animation:  bg-animate  18s ease infinite;
+
+        @keyframes  bg-animate  { 
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+
         
+        a{
+            padding: 2.5rem;
+            font-size: 1.5rem;
+        }
+        h1,p{
+            color: white!important;
+            animation: fade-in 2s;
+        }
         h1{
-            font-family: cursive,Arial, Helvetica, sans-serif;
-            font-size: 3em;
+            font-size: 3.5em;
             line-height: 1.5em;
-            color: map-get($colors,myprime)!important
+
         }
 
         p{
@@ -19,8 +33,13 @@ page-home {
             font-size: 1.5em;
             line-height: 1.5em;
         }
-    }
 
+        @keyframes fade-in {
+            0% { opacity:0 }
+            100% { opacity:100% }
+        }
+
+    }
 
 
     ion-card{

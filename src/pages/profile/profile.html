@@ -1,6 +1,6 @@
   <ion-header>
       <ion-navbar color="myprime">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row my-3 justify-content-center align-items-center">
                 <div class="invi-lg col-md-1 col-sm-1">
                     <button ion-button menuToggle icon-only>
@@ -12,18 +12,18 @@
             </div>
             <div class="col-lg-8 col-md-9 col-sm-11 invi-sm"> 
                 <ion-buttons class="text-right mr-5">
-                    <button (click)="goToHome()" class="px-3" ion-button icon-only>
+                    <a href="#/home" class="px-3" ion-button icon-only>
                         <ion-icon class="pr-3" name="home"></ion-icon>
                         <span class="invi-md">Home</span>
-                    </button>
+                    </a>
                     <button class="px-3" ion-button icon-only>
                         <ion-icon class="pr-3" name="contact"></ion-icon>
                         <span class="invi-md">profile</span>
                     </button>
-                    <button (click)="gotoMail()" class="px-3" ion-button icon-only>
+                    <a href="#/mailbox" class="px-3" ion-button icon-only>
                         <ion-icon class="pr-3" name="mail"></ion-icon>
                         <span class="invi-md">Messages</span>
-                    </button>
+                    </a>
                     <button class="px-3" ion-button icon-only>
                         <ion-icon name="notifications"></ion-icon>
                         <span class="invi-md">Notification</span>
@@ -38,7 +38,7 @@
       </ion-navbar>
     </ion-header>
 <ion-content padding>
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col-lg-3">
         <ion-card>
@@ -54,20 +54,20 @@
                   </ion-item>
             </ion-list>
         </ion-card>
-        <ion-card>
-            <ion-list no-lines>
-                <ion-item-group class="pr-3">
+        <ion-card  class="no-lines">
+            <ion-list>
+                <ion-item-group>
                     <button (click)="gotoMail()" ion-item><ion-icon name="mail" color="mysec" item-start></ion-icon>Mailbox<ion-badge item-end>4</ion-badge></button>
-                    <button ion-item><ion-icon name="people" color="mysec" item-start></ion-icon>Teachers</button>
-                    <button ion-item><ion-icon name="calendar" color="mysec" item-start></ion-icon>Schedule<ion-badge item-end>4</ion-badge></button>
+                    <button class="is-selected" ion-item><ion-icon name="people" color="mysec" item-start></ion-icon>Teachers</button>
+                    <a href="/#/sched" ion-item><ion-icon name="calendar" color="mysec" item-start></ion-icon>Schedule<ion-badge item-end>4</ion-badge></a>
                     <button ion-item><ion-icon name="person" color="mysec" item-start></ion-icon>Students</button>
                     <button ion-item><ion-icon name="cash" color="mysec" item-start></ion-icon>Payments</button>
                 </ion-item-group>
             </ion-list>
         </ion-card>
-        <ion-card>
-            <ion-list no-lines>
-                <ion-item-group class="pr-3">
+        <ion-card  class="no-lines">
+            <ion-list>
+                <ion-item-group>
                     <button ion-item><ion-icon name="help" color="mysec" item-start></ion-icon>Help</button>
                     <button ion-item><ion-icon name="settings" color="mysec"  item-start></ion-icon> Settings</button>
                     <button (click)="goToLogin()" detail-none ion-item><ion-icon name="power" color="mysec"  item-start></ion-icon> Logout</button>

@@ -2,28 +2,42 @@
 <my-header></my-header>
 </ion-header>
 
-<ion-content>
+<ion-content >
     <ion-fab class="mr-5 mb-3" right bottom>
         <button (click)="showChat($event)" ion-fab color="mysec"><ion-icon name="chatbubbles"></ion-icon></button>
     </ion-fab>
     <section class="cover">
-          <div class="container h-100 invi-md">
-            <div class="row h-100 justify-content-start align-items-center" >
-              <div class="col-6">
-                <h1 class="font-weight-light">Become The Best Online English Teacher</h1>
-                <p>Competitive Salary with Insurance and Bonuses</p>
-                <button  (click)="goToLogin()" large class="w-75 bg-mysec" ion-button ><ion-icon class="mr-5" name="flash"></ion-icon> Start Now</button>  
+          <div class="container cover h-100">
+            <div class="row h-100 justify-content-between align-items-center" >
+              <div class="col-lg-6">
+                <h1 ion-text class="font-weight-bold">Learn From The Best English Teachers</h1>
+                <p ion-text  class="font-weight-light">Speak English Fluently and Confidently. Enjoy Learning at the Comfort of your Home</p>
+                <a href="#/login" color="mysec" class="w-50" ion-button >Sign Up</a>
+                <a outline class="border-white text-white" ion-button > More info</a>  
+              </div>
+              <div class="col-lg-5">
+                <ion-card class="p-5">
+                    <form id="login-form">
+                        <ion-list class="text-center">
+                            <ion-item  class="pl-0 ml-1 mr-5">
+                              <ion-label floating>Username</ion-label>
+                              <ion-input type="text"></ion-input>
+                            </ion-item>
+                            <ion-item   class="pl-0 ml-1 mr-5">
+                              <ion-label floating>Password</ion-label>
+                              <ion-input type="password"></ion-input>
+                            </ion-item>
+                          </ion-list>
+                      <a href="#/profile" block class="my-4" color="mysec" ion-button>Login</a>
+                      <ion-list>
+                        <ion-item>
+                          <ion-label class="d-flex justify-content-center align-items-center" text-center><ion-checkbox class="mr-3"></ion-checkbox>Remember me</ion-label>
+                        </ion-item>
+                      </ion-list>
+                     </form>
+                  </ion-card> 
               </div>
             </div>
-          </div>
-          <div class="container invi-lg h-100">
-            <div class="row h-100 mb-5 justify-content-center align-items-end" >
-                  <ion-card class="col mb-5 p-5" >
-                      <h1>HOME-BASED ONLINE ENGLISH TEACHER</h1>
-                      <p>Earn as much as Php 14,000 per month with Insurance and Bonuses</p>
-                      <button (click)="goToLogin()" color="mysec" ion-button>Start Now</button>  
-                </ion-card>
-              </div>
           </div>
     </section>
 <section>
@@ -89,27 +103,8 @@
 
     </div>
 </section>
-<!-- <ion-grid >
-  <div class="justify-content-center">
-    <div col-lg-9 col-md-auto>
-        <ion-card>
-            <ion-slides pager centerSlides="true" loop speed="1000">
-                <ion-slide>
-                    <img src="../assets/imgs/logo.png">
-                    <h1>Jasmin Mendoza</h1>
-                    <h2>December 20, 2017</h2>
-                    <p>I'm starting a month of honesty last month. This is the first time I've ever heard of English, most important. No matter what the textbook is, or the course is about. After five tests, Saramu chose Cassie from the Good Talk. I really like the personality is calm, and I am following a lot of people. Maybe I'll keep on doing things until I do not tell him that he will stop. Thanks to my child.</p>
-                </ion-slide>
-                <ion-slide>
-                  <h1>Slide 2</h1>
-                </ion-slide>
-            </ion-slides>
-        </ion-card>
-    </div>
-  </div>
-</ion-grid> -->
 
-    <section >
+    <section class="pr-4">
         <h1 class="text-center">Teacher's Application Form</h1>
           <div class="container">
               <form  method="get">
@@ -201,9 +196,7 @@
                 </ion-list>
               
 
-
-
-                <div class="mt-5 row justify-content-center">
+               <div class="mt-5 row justify-content-center ml-1">
                   <div class="col">
                       <h4 text-left>How did you here about us?</h4>
                   </div>
@@ -258,9 +251,9 @@
                       </ion-list>
                   </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center ml-1">
                     <div class="my-4  col">
-                      <select class="w-100 p-3">
+                      <select class="border border-dark w-100 p-3">
                           <option >Assessment</option>
                           <option >Which place would you really like to  visit and why?</option>
                           <option>What do you usually do on the internet?</option>
@@ -269,17 +262,17 @@
                       </select>
                     </div>
                   </div>
-                  <div class="row justify-content-center">
+                  <div class="row justify-content-center ml-1">
                       <div class="my-4 col">
-                        <textarea placeholder="Please Select one question and answer briefly" rows="15" class="w-100 p-3"></textarea>
+                        <ion-textarea placeholder="Please Select one question and answer briefly" rows="15" class="border border-dark"></ion-textarea>
                       </div>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center ml-1">
                         <div class="my-4  col">
-                            <label><input type="checkbox"><span class="ml-5">I hereby certify that I am a natural-born Filipino citizen, of legal age, and that all the above information is true and correct.</span></label>
+                            <label><input type="checkbox"><span class="ml-3">I hereby certify that I am a natural-born Filipino citizen, of legal age, and that all the above information is true and correct.</span></label>
                         </div>
                       </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center ml-1">
                   <div class="my-4  col">
                       <button color="mysec" block ion-button>Submit</button>
                   </div>

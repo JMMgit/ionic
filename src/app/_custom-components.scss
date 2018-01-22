@@ -9,26 +9,18 @@ $theme-colors: (
   "google":#d34836
 );
 
-.is-highlighted{
-    background-color: map-get($colors,myprime)!important;
-}
-
-ion-buttons{ 
-    a:hover{ 
-        color:map-get($colors , myprime-light )!important;
-     }
-}
-
-.custom-card{
-    margin: 10px;
-    border-radius: 2px;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-              0 3px 1px -2px rgba(0, 0, 0, 0.2),
-                0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  }
-
+    .searchbar-input{
+     box-shadow:none!important;
+    }
+    ::-webkit-scrollbar{//remove scrollbar from ion-content
+      display:none;
+    }
   .card-md .item-md.item-block:not(:last-child) .item-inner {
     border-bottom: 1px solid #dedede;
+  }
+
+  .no-lines .item-md.item-block:not(:last-child) .item-inner {
+    border:none!important;
   }
   
  //for the main menu(Home, Career, Faq..) to be invisible at small devices

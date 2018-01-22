@@ -1,0 +1,184 @@
+<ion-header>
+    <ion-navbar color="myprime">
+      <div class="container">
+        <div class="row my-3 justify-content-center align-items-center">
+              <div class="invi-lg col-md-1 col-sm-1">
+                  <button ion-button menuToggle icon-only>
+                      <ion-icon name='menu'></ion-icon>
+                  </button> 
+              </div>
+          <div class="col-lg-4 col-md-3 invi-md">
+                <ion-searchbar showCancelButton="true"></ion-searchbar>
+          </div>
+          <div class="col-lg-8 col-md-9 col-sm-11 invi-sm"> 
+              <ion-buttons class="text-right mr-5">
+                  <a href="#/home" class="px-3" ion-button icon-only>
+                      <ion-icon class="pr-3" name="home"></ion-icon>
+                      <span class="invi-md">Home</span>
+                  </a>
+                  <button class="px-3" ion-button icon-only>
+                      <ion-icon class="pr-3" name="contact"></ion-icon>
+                      <span class="invi-md">profile</span>
+                  </button>
+                  <a href="#/mailbox" class="px-3" ion-button icon-only>
+                      <ion-icon class="pr-3" name="mail"></ion-icon>
+                      <span class="invi-md">Messages</span>
+                  </a>
+                  <button class="px-3" ion-button icon-only>
+                      <ion-icon name="notifications"></ion-icon>
+                      <span class="invi-md">Notification</span>
+                  </button>
+                  <button class="px-3" ion-button icon-only>
+                      <ion-icon name="more"></ion-icon>
+                  </button>
+              </ion-buttons> 
+          </div>
+        </div>
+      </div>
+    </ion-navbar>
+  </ion-header>
+
+
+<ion-content>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+              <ion-card>
+                  <ion-list no-lines>
+                      <ion-item>
+                          <ion-thumbnail item-start>
+                            <ion-avatar item-start>
+                                <img src="assets/imgs/sample.jpeg">
+                              </ion-avatar>
+                          </ion-thumbnail>
+                          <h2>Mark Dimatulac</h2>
+                          <p>Web Developer</p>
+                        </ion-item>
+                  </ion-list>
+              </ion-card>
+              <ion-card  class="no-lines">
+                  <ion-list>
+                      <ion-item-group>
+                          <a href="#/mailbox" ion-item><ion-icon name="mail" color="mysec" item-start></ion-icon>Mailbox<ion-badge item-end>4</ion-badge></a>
+                          <button ion-item><ion-icon name="people" color="mysec" item-start></ion-icon>Teachers</button>
+                          <button class="is-selected" ion-item><ion-icon name="calendar" color="mysec" item-start></ion-icon>Schedule<ion-badge item-end>4</ion-badge></button>
+                          <button ion-item><ion-icon name="person" color="mysec" item-start></ion-icon>Students</button>
+                          <button ion-item><ion-icon name="cash" color="mysec" item-start></ion-icon>Payments</button>
+                      </ion-item-group>
+                  </ion-list>
+              </ion-card>
+              <ion-card  class="no-lines">
+                  <ion-list>
+                      <ion-item-group>
+                          <button ion-item><ion-icon name="help" color="mysec" item-start></ion-icon>Help</button>
+                          <button ion-item><ion-icon name="settings" color="mysec"  item-start></ion-icon> Settings</button>
+                          <button (click)="goToLogin()" detail-none ion-item><ion-icon name="power" color="mysec"  item-start></ion-icon> Logout</button>
+                      </ion-item-group>
+                  </ion-list>
+              </ion-card>
+          </div>
+          <div class="col-lg-9">
+              <ion-card class="p-3 mw-75">
+                <div class="container">
+                  <div class="row py-4 justify-content-center align-items-center">
+                    <div class="col-2">
+                        <h2>January 2018</h2>
+                    </div>
+                    <div class="col-8">
+                        <ion-segment>
+                            <ion-segment-button>
+                              day
+                            </ion-segment-button>
+                            <ion-segment-button>
+                              week
+                            </ion-segment-button>
+                            <ion-segment-button class="is-selected">
+                              month
+                            </ion-segment-button>
+                          </ion-segment>
+                    </div>
+                    <div class="col-2">
+                      <ion-segment>
+                        <ion-segment-button>
+                            <ion-icon name="arrow-dropleft"></ion-icon>
+                        </ion-segment-button>
+                        <ion-segment-button>
+                            <ion-icon name="arrow-dropright"></ion-icon>
+                        </ion-segment-button>
+                      </ion-segment>
+                    </div>
+      
+                  </div>
+                <div class="row">
+                    <table class="container">
+                        <thead class="bg-mysec text-white">
+                          <tr class="row py-2">
+                            <th class="col" scope="col">Sunday</th>
+                            <th class="col" scope="col">Monday</th>
+                            <th class="col" scope="col">Tuesday</th>
+                            <th class="col" scope="col">Wednesday</th>
+                            <th class="col" scope="col">Thursday</th>
+                            <th class="col" scope="col">Friday</th>
+                            <th class="col" scope="col">Saturday</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="row w-100 m-0">
+                              <td class="col text-muted">29</td>
+                              <td class="col text-muted">30</td>
+                              <td class="col">
+                                1
+                                <p class="is-selected">
+                                    4:00pm-7:00pm
+                                </p>
+                              </td>
+                              <td (click)="showCalendarEvent()" class="col">2</td>
+                              <td (click)="showCalendarEvent()" class="col">3</td>
+                              <td (click)="showCalendarEvent()" class="col">4</td>
+                              <td (click)="showCalendarEvent()" class="col">5</td>
+                            </tr>
+                            <tr class="row w-100 m-0">
+                              <td (click)="showCalendarEvent()" class="col">6</td>
+                              <td (click)="showCalendarEvent()" class="col">7</td>
+                              <td (click)="showCalendarEvent()" class="col">8</td>
+                              <td (click)="showCalendarEvent()" class="col">9</td>
+                              <td (click)="showCalendarEvent()" class="col">10</td>
+                              <td (click)="showCalendarEvent()" class="col">11</td>
+                              <td (click)="showCalendarEvent()" class="col">12</td>
+                            </tr>
+                            <tr class="row w-100 m-0">
+                              <td (click)="showCalendarEvent()" class="col">13</td>
+                              <td (click)="showCalendarEvent()" class="col">14</td>
+                              <td (click)="showCalendarEvent()" class="col">15</td>
+                              <td (click)="showCalendarEvent()" class="col">16</td>
+                              <td (click)="showCalendarEvent()" class="col">17</td>
+                              <td (click)="showCalendarEvent()" class="col">18</td>
+                              <td (click)="showCalendarEvent()" class="col">19</td>
+                            </tr>
+                            <tr class="row w-100 m-0">
+                              <td (click)="showCalendarEvent()" class="col">20</td>
+                              <td (click)="showCalendarEvent()" class="col">21</td>
+                              <td (click)="showCalendarEvent()" class="col">22</td>
+                              <td (click)="showCalendarEvent()" class="col">23</td>
+                              <td (click)="showCalendarEvent()" class="col">24</td>
+                              <td (click)="showCalendarEvent()" class="col">25</td>
+                              <td (click)="showCalendarEvent()" class="col">26</td>
+                            </tr>
+                            <tr class="row w-100 m-0">
+                              <td (click)="showCalendarEvent()" class="col">27</td>
+                              <td (click)="showCalendarEvent()" class="col">28</td>
+                              <td (click)="showCalendarEvent()" class="col">29</td>
+                              <td (click)="showCalendarEvent()" class="col">30</td>
+                              <td (click)="showCalendarEvent()" class="col">31</td>
+                              <td class="col text-muted">1</td>
+                              <td class="col text-muted">2</td>
+                            </tr>
+                      </table>
+                </div>
+                
+                </div>
+              </ion-card>
+            </div>
+        </div>
+      </div>
+</ion-content>

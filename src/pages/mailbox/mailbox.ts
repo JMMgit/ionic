@@ -15,10 +15,9 @@ export class MailboxPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad MailboxPage');
   }
-  goToHome(){
+    goToHome(){
     this.navCtrl.setRoot("HomePage");
   }
-
       
   goToProfile(){
     this.navCtrl.setRoot("ProfilePage");
