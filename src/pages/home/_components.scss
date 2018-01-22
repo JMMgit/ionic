@@ -13,7 +13,11 @@ page-home {
             100%{background-position:0% 50%}
         }
 
-        
+        #logo{
+            color: map-get($colors,mysec);
+            font-size: 4em!important;
+        }
+
         a{
             padding: 2.5rem;
             font-size: 1.5rem;
