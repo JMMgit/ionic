@@ -34,16 +34,16 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
+  transparent:transparent,
+  white:#fff,
   black:#000,
   primary: #488aff,
-  myprime:#22bfec,
-  myprime-light:#6ff2ff,
-  myprime-dark:#008fb9,
-  mysec:#8e24aa,
-  mysec-light:#5c007a,
-  mysec-dark:#c158dc,
-  fb: #3B5998 ,
-  google:#d34836
+  myprime:#2196f3,
+  myprime-light:#6ec6ff,
+  myprime-dark:#0069c0,
+  mysec:#9c27b0,
+  mysec-light:#d05ce3,
+  mysec-dark:#6a0080,
 );
 
 
@@ -57,8 +57,6 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
-
 
 // App Windows Variables
 // --------------------------------------------------

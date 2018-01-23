@@ -1,13 +1,27 @@
 my-header {
-    
-    .is-highlighted{
-        background-color: map-get($colors,myprime)!important;
-        box-shadow: none!important;
+
+    #logo{
+        color: map-get($colors,white);
+        font-size: 2em!important;
     }
+
+    .is-highlighted{ 
+        background-color: map-get($colors,mysec)!important;
+    }
+
+    .is-highlighted:hover{
+        opacity: 1!important;
+        background:map-get($colors , mysec-dark )!important;
+    }
+
 
     ion-buttons{ 
         a:hover{ 
             color:map-get($colors , myprime-light )!important;
          }
+    }
+
+    .popover-content{
+        left:0!important;
     }
 }

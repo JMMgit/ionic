@@ -12,4 +12,12 @@ export class MyHeaderComponent {
     console.log('Hello MyHeaderComponent Component');
   }
 
+
+  showMenu(myEvent) {
+    let popover = this.popoverCtrl.create("PopmenuPage");
+    popover.present({
+      ev: myEvent
+    });
+  }
+
 }

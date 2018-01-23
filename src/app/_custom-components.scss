@@ -1,19 +1,22 @@
 $theme-colors: (
-  "myprime":#22bfec,
-  "myprime-light":#6ff2ff,
-  "myprime-dark":#008fb9,
-  "mysec":#8e24aa,
-  "mysec-light":#5c007a,
-  "mysec-dark":#c158dc,
-  "fb": #3B5998 ,
-  "google":#d34836
+    "transparent":transparent,
+   "white":#fff,
+    "black":#000,
+    "primary": #488aff,
+    "myprime":#2196f3,
+    "myprime-light":#6ec6ff,
+    "myprime-dark":#0069c0,
+    "mysec":#9c27b0,
+    "mysec-light":#d05ce3,
+    "mysec-dark":#6a0080,
 );
+    .no-shadow{box-shadow: none!important}
 
     .searchbar-input{
-     box-shadow:none!important;
+        box-shadow:none!important;
     }
     ::-webkit-scrollbar{//remove scrollbar from ion-content
-      display:none;
+        display:none;
     }
   .card-md .item-md.item-block:not(:last-child) .item-inner {
     border-bottom: 1px solid #dedede;
