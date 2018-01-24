@@ -1,27 +1,27 @@
 my-header {
 
     #logo{
-        color: map-get($colors,white);
+        opacity: 0.7;
+        color: map-get($colors,myprime);
         font-size: 2em!important;
+        cursor: pointer;
+    }
+
+    #logo:hover{
+        opacity: 1;
+        transition: all 0.3s ease-in-out;
     }
 
     .is-highlighted{ 
-        background-color: map-get($colors,mysec)!important;
+        color: white!important;
+        background-color: map-get($colors,myprime)!important;
+        transition: all 0.3s ease-in-out;
     }
-
-    .is-highlighted:hover{
-        opacity: 1!important;
-        background:map-get($colors , mysec-dark )!important;
-    }
-
 
     ion-buttons{ 
-        a:hover{ 
-            color:map-get($colors , myprime-light )!important;
-         }
+        .bar-button{font-weight: normal!important}
+        a{ opacity: 0.7 }
+        a:hover{ opacity: 1!important}
     }
 
-    .popover-content{
-        left:0!important;
-    }
 }

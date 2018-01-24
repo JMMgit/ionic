@@ -1,13 +1,5 @@
 page-home {
 
-    .cover{
-
-        a:hover{
-            opacity: 1!important;
-            background:map-get($colors , mysec-dark )!important;
-        }
-    }
-
     .scale:hover{
         ion-card{
             transform: scale(1.04, 1.04);

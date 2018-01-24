@@ -3,43 +3,60 @@
 </ion-header>
 
 <ion-content>
-    <ion-fab right bottom>
-        <button (click)="showChat($event)" ion-fab color="mysec"><ion-icon name="chatbubbles"></ion-icon></button>
-    </ion-fab>
-    <section class="cover mb-5">
-          <div class="container h-100">
-            <div class="row h-100 justify-content-between align-items-center" >
-              <div class="col-lg-6 ml-lg-3">
-                <h1 ion-text class="font-weight-bold">Learn From The Best English Teachers</h1>
-                <p ion-text  class="font-weight-light">Speak English Fluently and Confidently. Enjoy Learning at the Comfort of your Home</p>
-                <a href="#/login" color="mysec" class="w-50" ion-button >Sign Up</a>
-                <a outline class="border-white text-white" ion-button > Learn More</a>  
-              </div>
-              <div class="col-lg-5">
-                <ion-card  id="login-form" class="p-5">
-                    <form>
-                        <ion-list no-lines class="text-center">
-                            <ion-item color="transparent" class="pl-0 ml-1 mr-5">
-                              <ion-label floating>Username</ion-label>
-                              <ion-input type="text"></ion-input>
-                            </ion-item>
-                            <ion-item color="transparent"  class="pl-0 ml-1 mr-5">
-                              <ion-label floating>Password</ion-label>
-                              <ion-input type="password"></ion-input>
-                            </ion-item>
-                          </ion-list>
-                      <a href="#/profile" block class="my-4" color="mysec" ion-button>Login</a>
-                      <ion-list>
-                        <ion-item color="transparent">
-                          <ion-label class="d-flex justify-content-center align-items-center text-dark" text-center><ion-checkbox class="mr-3"></ion-checkbox>Remember me</ion-label>
-                        </ion-item>
-                      </ion-list>
-                     </form>
-                  </ion-card> 
+  <section class="cover position-relative mb-5">
+      <ion-slides  class="position-absolute top-0" effect="fade" pager="true" speed="1000" paginationType="progress" autoplay="4000" loop="true">
+          <ion-slide class="bg-myprime-dark">
+              <video class="w-100 invi-md" src="../assets/imgs/cover.mp4" muted loop autoplay></video>
+          </ion-slide>
+          <ion-slide class="bg-myprime">
+              <video class="w-100 invi-md" src="../assets/imgs/cover2.mp4" muted loop autoplay></video>
+          </ion-slide>
+          <ion-slide class="bg-myprime-light">
+              <video class="w-100 invi-md" src="../assets/imgs/cover3.mp4" muted loop autoplay></video>
+          </ion-slide>
+      </ion-slides>
+      <div class="container h-100">
+        <div class="row h-100 justify-content-between align-items-center" >
+          <div class="col-lg-6 ml-lg-3">
+            <h1 ion-text class="font-weight-bold">Learn From The Best English Teachers</h1>
+            <p ion-text  class="font-weight-light">Speak English Fluently and Confidently. Enjoy Learning at the Comfort of your Home</p>
+            <div class="container">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-md-8 pl-lg-0">
+                    <input text-center placeholder="Full Name" type="text" class="form-control py-3"/>
+                </div>
+                <div class="col-md-4 p-lg-0 my-4">
+                    <button href="#" color="mysec" ion-button >free Level TesT</button>
+                </div>
               </div>
             </div>
           </div>
-    </section>
+          <div class="col-lg-5">             
+            <img class="w-100" src="../assets/imgs/mac.png" alt="mac">
+            <!-- <ion-card  id="login-form" class="p-5">
+                <form>
+                    <ion-list no-lines class="text-center">
+                        <ion-item color="transparent" class="pl-0 ml-1 mr-5">
+                          <ion-label floating>Username</ion-label>
+                          <ion-input type="text"></ion-input>
+                        </ion-item>
+                        <ion-item color="transparent"  class="pl-0 ml-1 mr-5">
+                          <ion-label floating>Password</ion-label>
+                          <ion-input type="password"></ion-input>
+                        </ion-item>
+                      </ion-list>
+                  <a href="#/profile" block class="my-4" color="mysec" ion-button>Login</a>
+                  <ion-list>
+                    <ion-item color="transparent">
+                      <ion-label class="d-flex justify-content-center align-items-center text-dark" text-center><ion-checkbox class="mr-3"></ion-checkbox>Remember me</ion-label>
+                    </ion-item>
+                  </ion-list>
+                  </form>
+              </ion-card>  -->
+          </div>
+        </div>
+      </div>
+</section>
 <section>
   <div class="container my-5">
     <div class="row justify-content-center">
@@ -103,11 +120,6 @@
 
     </div>
 </section>
-<!-- <section class="bg-light cover">
-  <div class="container">
-      <h1>English TextBook</h1>
-  </div>
-</section> -->
     <section class="bg-myprime-light py-5">
         <h1 ion-text color="white" class="text-center pt-5">Apply for a Free Level Test</h1>
         <h4 ion-text color="white" class="text-center pb-5 font-weight-light">25 minutes of fun with a native speaker! You can apply for a level test without registering.</h4>
@@ -117,17 +129,17 @@
                       <div class="row">
                         <div class="col">
                             <ion-label>Full Name</ion-label>
-                            <ion-input class="border bg-light rounded" type="text"></ion-input>
+                            <ion-input class="border bg-light" type="text"></ion-input>
                         </div>
                         <div class="col">
                             <ion-label>Contact Number</ion-label>
-                            <ion-input class="border  bg-light rounded" type="text"></ion-input>
+                            <ion-input class="border  bg-light" type="text"></ion-input>
                         </div>
                       </div>
                       <div class="row">
                           <div class="col-lg-6">
                               <ion-label>Select Date</ion-label>
-                              <ion-select class="border  bg-light rounded mw-100">
+                              <ion-select class="border  bg-light mw-100">
                                 <ion-option selected>01/20/2018</ion-option>
                                 <ion-option>01/21/2018</ion-option>
                                 <ion-option>01/22/2018</ion-option>
@@ -137,7 +149,7 @@
                           </div>
                           <div class="col-lg-6">
                               <ion-label>Select Time</ion-label>
-                              <ion-select class="border  bg-light rounded mw-100">
+                              <ion-select class="border  bg-light mw-100">
                                 <ion-option selected>3:00pm</ion-option>
                                 <ion-option>3:30pm</ion-option>
                                 <ion-option>4:00pm</ion-option>
@@ -149,18 +161,134 @@
                         <div class="row">
                           <div class="col">
                               <ion-label>Comments/Message</ion-label>
-                              <ion-textarea placeholder="What's on your mind?" rows="8" class="border  bg-light rounded" type="text"></ion-textarea> 
+                              <ion-textarea placeholder="What's on your mind?" rows="8" class="border  bg-light" type="text"></ion-textarea> 
                           </div>
                           </div>
                           <div class="row justify-content-center">
                             <div class="col-lg-4">
-                              <button color="mysec" class="w-100 mt-5" ion-button>Submit Application</button>
+                              <button color="myprime" class="w-100 mt-5" ion-button>Submit Application</button>
                             </div>
                           </div>
                       </form>
               </ion-card>             
             </div>
   </section>
+  <section class="bg-myprime pt-5">
+      <h1 ion-text color="white" class="text-center pt-5 mt-0">English Textbooks</h1>
+      <h4 ion-text color="white" class="text-center pb-5 font-weight-light">Exciting and Amazing Textbooks with a lot of options to choose from</h4>
+      <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-6 p-0 scale">
+                <ion-card class="no-shadow text-justify rounded border-white border ">
+                    <img class="w-100" src="../assets/imgs/book1.jpg">
+                    <ion-card-content>
+                        <ion-card-title>
+                            English Time
+                          </ion-card-title>
+                          <p>
+                              A comprehensive series of 6 volumes for children who learn to read, listen, write, and speak at once. 1 to 4 volumes focus on basic vocabulary and expressions. 
+                          </p>
+                    </ion-card-content>
+                  </ion-card>
+            </div>
+            <div class="col-lg-3 col-md-6 p-0  scale">
+                <ion-card class="no-shadow text-justify  rounded border-white border ">
+                    <img class="w-100" src="../assets/imgs/book2.jpg">
+                    <ion-card-content>
+                        <ion-card-title>
+                            Express Yourself
+                          </ion-card-title>
+                          <p>
+                              Secondary and adult textbooks published by Oxford. A textbook that enhances interest in English through interesting and unbelievable stories. Good for learning idioms.
+                          </p>
+                    </ion-card-content>
+                  </ion-card>
+            </div>
+            <div class="col-lg-3 col-md-6 p-0  scale">
+                <ion-card class="no-shadow text-justify  rounded border-white border ">
+                    <img class="w-100" src="../assets/imgs/book3.jpg">
+                    <ion-card-content>
+                        <ion-card-title>
+                            Can you believe it?
+                          </ion-card-title>
+                          <p>
+                              Basic and enjoyable content Basic English 5 to 10 years old suitable for children to use the necessary expressions in English to improve children's speaking skills.
+                          </p>
+                    </ion-card-content>
+                  </ion-card>
+            </div>
+            <div class="col-lg-3 col-md-6 p-0  scale">
+                <ion-card class="no-shadow text-justify  rounded border-white border ">
+                    <img class="w-100" src="../assets/imgs/book4.jpg">
+                    <ion-card-content>
+                        <ion-card-title>
+                            Let's Go
+                          </ion-card-title>
+                          <p>
+                              A comprehensive series of 6 volumes for children who learn to read, listen, write, and speak at once. 1 to 4 volumes focus on basic vocabulary and expressions. 
+                          </p>
+                    </ion-card-content>
+                  </ion-card>
+            </div>
+    
+          </div>
+          <div class="row justify-content-center pb-5">
+              <div class="col-lg-3 col-md-6 p-0 scale">
+                  <ion-card class="no-shadow text-justify rounded border-white border ">
+                      <img class="w-100" src="../assets/imgs/book1.jpg">
+                      <ion-card-content>
+                          <ion-card-title>
+                              English Time
+                            </ion-card-title>
+                            <p>
+                                A comprehensive series of 6 volumes for children who learn to read, listen, write, and speak at once. 1 to 4 volumes focus on basic vocabulary and expressions. 
+                            </p>
+                      </ion-card-content>
+                    </ion-card>
+              </div>
+              <div class="col-lg-3 col-md-6 p-0  scale">
+                  <ion-card class="no-shadow text-justify  rounded border-white border ">
+                      <img class="w-100" src="../assets/imgs/book2.jpg">
+                      <ion-card-content>
+                          <ion-card-title>
+                              Express Yourself
+                            </ion-card-title>
+                            <p>
+                                Secondary and adult textbooks published by Oxford. A textbook that enhances interest in English through interesting and unbelievable stories. Good for learning idioms.
+                            </p>
+                      </ion-card-content>
+                    </ion-card>
+              </div>
+              <div class="col-lg-3 col-md-6 p-0  scale">
+                  <ion-card class="no-shadow text-justify  rounded border-white border ">
+                      <img class="w-100" src="../assets/imgs/book3.jpg">
+                      <ion-card-content>
+                          <ion-card-title>
+                              Can you believe it?
+                            </ion-card-title>
+                            <p>
+                                Basic and enjoyable content Basic English 5 to 10 years old suitable for children to use the necessary expressions in English to improve children's speaking skills.
+                            </p>
+                      </ion-card-content>
+                    </ion-card>
+              </div>
+              <div class="col-lg-3 col-md-6 p-0  scale">
+                  <ion-card class="no-shadow text-justify  rounded border-white border ">
+                      <img class="w-100" src="../assets/imgs/book4.jpg">
+                      <ion-card-content>
+                          <ion-card-title>
+                              Let's Go
+                            </ion-card-title>
+                            <p>
+                                A comprehensive series of 6 volumes for children who learn to read, listen, write, and speak at once. 1 to 4 volumes focus on basic vocabulary and expressions. 
+                            </p>
+                      </ion-card-content>
+                    </ion-card>
+              </div>
+      
+            </div>
+      </div>
+    </section>
   <footer class="p-3">
       <p text-center>&copy;Copyright 2018. All Rights Reserved</p>
   </footer>

@@ -1,19 +1,18 @@
 page-home {
     .cover{
-        height: 90vh;
-        background: linear-gradient(273deg, map-get($colors,myprime-dark),map-get($colors,mysec-dark));
-        background-size: 600% 600%;
-        animation:  bg-animate  10s ease infinite;
-        @keyframes  bg-animate  { 
-            0%{background-position:0% 50%}
-            50%{background-position:100% 50%}
-            100%{background-position:0% 50%}
+        height: 100vh;
+        background: linear-gradient(0deg, rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+        ion-slides{ z-index: -100 }
+
+        .button-md{
+            font-family: Arial, Helvetica, sans-serif!important;
+            padding: 1.7em 1em!important;
         }
 
-        a{
-            padding: 2.5rem;
-            font-size: 1.5rem;
+        input{
+            font-size: 1.3em
         }
+
         h1,p{
             color: white!important;
             animation: fade-in 2s;
@@ -29,6 +28,7 @@ page-home {
             font-size: 1.5em;
             line-height: 1.5em;
         }
+
 
         @keyframes fade-in {
             0% { opacity:0 }

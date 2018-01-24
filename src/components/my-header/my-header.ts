@@ -20,4 +20,8 @@ export class MyHeaderComponent {
     });
   }
 
+  goToHome(){
+    this.navCtrl.setRoot('HomePage');
+  }
+
 }
