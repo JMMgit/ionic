@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PopoverController, NavController, NavParams } from 'ionic-angular';
+import {ViewController, PopoverController, NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'my-header',
@@ -8,7 +8,7 @@ import { PopoverController, NavController, NavParams } from 'ionic-angular';
 export class MyHeaderComponent {
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController) {
+  constructor(public viewCtrl: ViewController,public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController) {
     console.log('Hello MyHeaderComponent Component');
   }
 
@@ -20,8 +20,19 @@ export class MyHeaderComponent {
     });
   }
 
+  showDropdown(myEvent) {
+    let popover = this.popoverCtrl.create("DropdownPage");
+    popover.present({
+      ev: myEvent
+    });
+  }
+
+
   goToHome(){
     this.navCtrl.setRoot('HomePage');
   }
 
+  goToProfile(){
+    this.navCtrl.setRoot('ProfilePage');
+  }
 }

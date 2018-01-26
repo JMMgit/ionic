@@ -1,7 +1,7 @@
 page-home {
     .cover{
         height: 100vh;
-        background: linear-gradient(0deg, rgba(0,0,0,0.25),rgba(0,0,0,0.25));
+        background: linear-gradient(0deg, rgba(map-get($colors,myprime-dark),0.8),rgba(map-get($colors,myprime-dark),0.8));
         ion-slides{ z-index: -100 }
 
         .button-md{
@@ -64,19 +64,25 @@ page-home {
     }
 
     .teachers{
-        ion-slides{
-            background: linear-gradient(0deg, rgba(map-get($colors,myprime-dark),.8),rgba(map-get($colors,myprime-dark),.9)), url('../assets/imgs/teachercover.jpeg');
+            background: linear-gradient(0deg, rgba(map-get($colors,myprime-dark),.1),rgba(map-get($colors,myprime-dark),1));
             background-size: cover;
             background-position: center;
-        }
         img{
-            height: 157px;
+            height: 172px;
             width: 177px;
-            border-radius:50%;
+            @media screen and(max-width:920px) {
+                margin: 0 auto
+            }
         }
-        blockquote{
-            line-height: 1.8em;
+        h3{
+            line-height: 2.5em;
             font-size:0.9em
+        }
+    }
+
+    .title{
+        @media screen and (min-width:920px) {
+            padding: 3em 0 2.2em 0!important;  
         }
     }
 

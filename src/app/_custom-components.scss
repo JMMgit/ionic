@@ -11,21 +11,21 @@ $theme-colors: (
     "mysec-light":#d05ce3,
     "mysec-dark":#6a0080,
 );
-    .no-shadow{box-shadow: none!important}
+.no-shadow{box-shadow: none!important}
 
-    .searchbar-input{
-        box-shadow:none!important;
-    }
-    ::-webkit-scrollbar{//remove scrollbar from ion-content
-        display:none;
-    }
-  .card-md .item-md.item-block:not(:last-child) .item-inner {
-    border-bottom: 1px solid #dedede;
-  }
+.searchbar-input{
+    box-shadow:none!important;
+}
+::-webkit-scrollbar{//remove scrollbar from ion-content
+    display:none;
+}
+.card-md .item-md.item-block:not(:last-child) .item-inner {
+border-bottom: 1px solid #dedede;
+}
 
-  .no-lines .item-md.item-block:not(:last-child) .item-inner {
-    border:none!important;
-  }
+.no-lines .item-md.item-block:not(:last-child) .item-inner {
+border:none!important;
+}
 
 .top-0{
     top:0!important;
@@ -40,10 +40,14 @@ $theme-colors: (
     bottom:0!important;
 }
 
+.popover-content{
+    top:70px!important;
+}
+
 .vh-100{ height:100vh}
 .vh-90{ height:90vh}
-  
- //for the main menu(Home, Career, Faq..) to be invisible at small devices
+
+//for the main menu(Home, Career, Faq..) to be invisible at small devices
 @media screen and (max-width:575px) {
     .invi-sm{ display: none!important }
 }

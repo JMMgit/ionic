@@ -5,20 +5,20 @@
         <div class="d-flex justify-content-between align-items-center col-md-12 col-lg-3 ml-lg-3 pr-0">
           <div class="d-flex align-items-center" id="logo"><ion-icon (click)="goToHome()" name="logo-buffer"></ion-icon><span class="ml-2" ion-text>ONTUE</span></div>
           <ion-buttons>
-              <button (click)="showMenu($event)" class="invi-lg" ion-button icon-only>
+              <button  class="invi-lg" ion-button icon-only>
                   <ion-icon color="myprime" name='more'></ion-icon>
               </button> 
           </ion-buttons>
         </div>
         <div class="invi-md text-right col-lg-8">
           <ion-buttons class="d-inline-block my-2">
-            <a href="/#/home" class="pr-2 pl-0" ion-button>Home</a>
-            <a href="/#/profile" class="px-2" ion-button>Profile</a>
-            <a href="/#/sched" class="px-2" ion-button>Schedule</a>
-            <a href="#"  class="px-2" ion-button>Payments</a>        
-            <a href="#" class="px-2 " ion-button>Teachers</a>      
+            <a (click)="goToHome()" class="pr-2 pl-0" ion-button>Home</a>
+            <a href="#" (mouseover)="showDropdown($event)"  icon-end  class="px-2" ion-button>Profile<ion-icon class="pb-1" name="arrow-dropdown"></ion-icon></a>
+            <a href="#" class="px-2" ion-button>Schedule</a>
+            <a href="#" class="px-2" ion-button>Payments</a>        
+            <a href="#"  class="px-2 " ion-button>Teachers</a>      
             <a href="#" class="pl-4 border border-secondary border-top-0 border-right-0 border-bottom-0 rounded-0" ion-button>login</a> 
-            <a href="#" class="is-highlighted p-4" ion-button>Sign Up</a> 
+            <a href="#" class="is-highlighted p-4 mr-3" ion-button>Sign Up</a> 
           </ion-buttons>
           </div>
         </div>
