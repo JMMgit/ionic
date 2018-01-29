@@ -6,7 +6,7 @@ my-header {
         cursor: pointer;
         ion-icon{font-size: 3em!important}
         span{
-            font-size: 2em;
+            font-size: 1.5em;
             font-family:Arial, Helvetica, sans-serif
         }
     }
@@ -22,7 +22,11 @@ my-header {
     }
 
     ion-buttons{ 
-        .bar-button{font-weight: normal!important}
+        .bar-button{
+            font-size: 0.90em!important;
+            font-weight: normal!important
+        }
+        
         a{ opacity: 0.7 }
         a:hover{ 
             opacity: 1!important;
