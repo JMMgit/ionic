@@ -24,7 +24,10 @@ my-header {
     ion-buttons{ 
         .bar-button{font-weight: normal!important}
         a{ opacity: 0.7 }
-        a:hover{ opacity: 1!important}
+        a:hover{ 
+            opacity: 1!important;
+            color: map-get($colors,myprime);
+        }
     }
 
 }

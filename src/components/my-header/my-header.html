@@ -1,23 +1,22 @@
 <!-- Generated template for the MyHeaderComponent component -->
   <ion-navbar color="white">
-    <div class="container">
+    <div class="container h-100">
       <div class="row my-3 justify-content-between align-items-center">
-        <div class="d-flex justify-content-between align-items-center col-md-12 col-lg-3 ml-lg-3 pr-0">
-          <div class="d-flex align-items-center" id="logo"><ion-icon (click)="goToHome()" name="logo-buffer"></ion-icon><span class="ml-2" ion-text>ONTUE</span></div>
+        <div class="d-flex justify-content-between align-items-center col-md-12 col-lg-2 ml-lg-3 pr-0">
+          <div class="d-flex align-items-center" id="logo"><ion-icon name="logo-buffer"></ion-icon><span class="ml-2" ion-text>ONTUE</span></div>
           <ion-buttons>
               <button  class="invi-lg" ion-button icon-only>
                   <ion-icon color="myprime" name='more'></ion-icon>
               </button> 
           </ion-buttons>
         </div>
-        <div class="invi-md text-right col-lg-8">
-          <ion-buttons class="d-inline-block my-2">
-            <a (click)="goToHome()" class="pr-2 pl-0" ion-button>Home</a>
-            <a href="#" (mouseover)="showDropdown($event)"  icon-end  class="px-2" ion-button>Profile<ion-icon class="pb-1" name="arrow-dropdown"></ion-icon></a>
-            <a href="#" class="px-2" ion-button>Schedule</a>
-            <a href="#" class="px-2" ion-button>Payments</a>        
-            <a href="#"  class="px-2 " ion-button>Teachers</a>      
-            <a href="#" class="pl-4 border border-secondary border-top-0 border-right-0 border-bottom-0 rounded-0" ion-button>login</a> 
+        <div class="invi-md text-right col-lg-9">
+          <ion-buttons class="d-inline-block w-100">
+            <a href="#" color="myprime" icon-start  class="px-3" ion-button><ion-icon  class="pb-1" name="home"></ion-icon>Home</a>
+            <a href="#" color="myprime" icon-start  class="px-3" ion-button><ion-icon  class="pb-1" name="md-person"></ion-icon>Profile</a>
+            <a href="#" color="myprime" icon-start  class="px-3" ion-button><ion-icon  class="pb-1" name="calendar"></ion-icon>Schedule</a>
+            <a href="#" color="myprime" icon-start  class="px-3" ion-button><ion-icon  class="pb-1" name="paper-plane"></ion-icon>Payments</a>        
+            <a href="#" color="myprime" icon-start  class="px-3 pl-4 border border-secondary border-top-0 border-right-0 border-bottom-0 rounded-0" ion-button><ion-icon  class="pb-1" name="exit"></ion-icon>Login</a>     
             <a href="#" class="is-highlighted p-4 mr-3" ion-button>Sign Up</a> 
           </ion-buttons>
           </div>
