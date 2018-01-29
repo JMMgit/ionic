@@ -1,0 +1,61 @@
+//additional theme-colors for bootstrap framework
+$theme-colors: (
+    'gray':#E1E2E1,
+    "black":#000,
+    "primary": #488aff,
+    "myprime":#2196f3,
+    "myprime-light":#6ec6ff,
+    "myprime-dark":#0069c0,
+    "mysec":#9c27b0,
+    "mysec-light":#d05ce3,
+    "mysec-dark":#6a0080,
+);
+
+.no-shadow{box-shadow: none!important}
+
+::-webkit-scrollbar{//remove scrollbar from ion-content
+    display:none;
+}
+
+.card-md .item-md.item-block:not(:last-child) .item-inner {// ion-input bug in ion card (temporary remedy)
+border-bottom: 1px solid #dedede;
+}
+
+.no-lines .item-md.item-block:not(:last-child) .item-inner {
+border:none!important;
+}
+
+.top-0{top:0!important}
+.left-0{left:0!important}
+.right-0{right:0!important}
+.bottom-0{bottom:0!important}
+
+.popover-content{top:70px!important}// navbar popdown temp remedy
+
+//for my cover(hero) height
+.vh-100{ height:100vh}
+.vh-90{ height:90vh}
+
+//for the main menu(Home, Career, Faq..) to be invisible at small devices
+@media screen and (max-width:575px) {
+    .invi-sm{ display: none!important }
+}
+
+//for the searchbar to be invisible at medium devices   
+@media screen and (max-width:991px) {
+    .invi-md{ display: none!important }
+}
+
+//for menu icon(humburger menu) to be invisible at large devices
+@media screen and (min-width:992px) {
+    .invi-lg{ display: none!important }
+}
+
+.font-em{
+    @for $i from 0 to 6{
+        &-#{$i}{font-size:#{$i}em!important}
+        &-#{$i}-25{font-size:#{$i+.25em}!important}
+        &-#{$i}-50{font-size:#{$i+.50em}!important}
+        &-#{$i}-75{font-size:#{$i+.75em}!important}
+    }
+}
