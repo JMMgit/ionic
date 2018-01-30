@@ -1,105 +1,207 @@
-<ion-content class="position-fixed bg-light">
+<ion-content class="bg-light">
 <my-header></my-header>
-<div class="container border">
+<div class="container">
 <div class="row">
-    <div class="col-lg-3 over-flow-y vh-90">
-    <ion-list no-lines class="m-0" text-wrap>
-        <ion-list-header class="text-myprime m-0 border-0">
-            Suggested Books
-        <button ion-button clear item-end>See All</button>
-        </ion-list-header>
-        <button ion-item>
-         <div class="d-flex">
-            <ion-thumbnail>
-                <img src="../assets/imgs/book1.jpg">
-            </ion-thumbnail>
-            <div class="ml-2">
-                <h2 class="font-weight-light">ExpressWays</h2>
-                <p class="font-em-0-75">Derick Pascual • 2016<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus!</p>
-            </div>
-        </div>
-    </button>
-        <button ion-item>
-            <div class="d-flex">
-                <ion-thumbnail>
-                    <img src="../assets/imgs/book2.jpg">
-                </ion-thumbnail>
-                <div class="ml-2">
-                    <h2  class="font-weight-light">Reading Cue</h2>
-                    <p class="font-em-0-75">Derick Pascual • 2016<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus!</p>
-                </div>
-            </div>
-        </button>
-        <button ion-item>
-            <div class="d-flex">
-                <ion-thumbnail>
-                    <img src="../assets/imgs/book4.jpg">
-                </ion-thumbnail>
-                <div class="ml-2">
-                    <h2  class="font-weight-light">Cambridge IELTS</h2>
-                    <p class="font-em-0-75">Derick Pascual • 2016<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus!</p>
-                </div>
-            </div>
-        </button>
-    </ion-list>
-    <ion-list text-wrap>
+    <div class="col-lg-3 over-flow-y vh-100 mt-3 pb-5 px-0">
+        <ion-card class="no-shadow mt-0 mx-0 pb-1">
+            <ion-list class="no-lines" text-wrap>
+                    <ion-list-header class="text-primary m-0 border-0">
+                        Suggested Books
+                    <button ion-button clear item-end>View All</button>
+                    </ion-list-header>
+                    <button ion-item class="border border-left-0 border-right-0">
+                        <div class="d-flex align-items-center justify-content-center">
+                        <ion-thumbnail>
+                            <img src="../assets/imgs/book1.jpg">
+                        </ion-thumbnail>
+                        <div class="ml-3">
+                            <h2>ExpressWays</h2>
+                            <p class="font-em-0-75">Derick Pascual • 2016<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus!</p>
+                        </div>
+                    </div>
+                </button>
+                    <button class="border border-top-0 border-left-0 border-right-0" ion-item>
+                        <div class="d-flex  align-items-center justify-content-center">
+                            <ion-thumbnail>
+                                <img src="../assets/imgs/book2.jpg">
+                            </ion-thumbnail>
+                            <div class="ml-3">
+                                <h2>Reading Cue</h2>
+                                <p class="font-em-0-75">Derick Pascual • 2016<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus!</p>
+                            </div>
+                        </div>
+                    </button>
+                    <button ion-item>
+                        <div class="d-flex  align-items-center justify-content-center">
+                            <ion-thumbnail>
+                                <img src="../assets/imgs/book4.jpg">
+                            </ion-thumbnail>
+                            <div class="ml-3">
+                                <h2>IELTS</h2>
+                                <p class="font-em-0-75">Derick Pascual • 2016<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ducimus!</p>
+                            </div>
+                        </div>
+                    </button>
+                </ion-list>
+        </ion-card>
+    <ion-card class="no-shadow mx-0">
+            <ion-list text-wrap class="pb-1 no-lines">
+                <ion-list-header class="m-0 text-primary">
+                    Rules and Regulation
+                    <button ion-button clear item-end>Read More</button>
+                </ion-list-header>
+                <ion-item  class="border border-left-0 border-right-0">
+                    <h2 class=" font-em-1">Agreement</h2>
+                    <p class="font-em-0-75">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt accusamus cumque officiis nostrum id fuga, illo corporis reprehenderit placeat.</p>
+                </ion-item>
+                <ion-item  class="border border-top-0 border-left-0 border-right-0">
+                    <h2 class=" font-em-1">Responsibility</h2>
+                    <p class="font-em-0-75">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt accusamus cumque officiis nostrum id fuga, illo corporis reprehenderit placeat.</p>
+                </ion-item>
+                <ion-item>
+                    <h2 class=" font-em-1">Privacy</h2>
+                    <p class="font-em-0-75">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt accusamus cumque officiis nostrum id fuga, illo corporis reprehenderit placeat.</p>
+                </ion-item>
+
+            </ion-list>
+            </ion-card>
+        <ion-card class="no-shadow mx-0">
+        <ion-list text-wrap class=" no-lines pb-5">
             <ion-list-header class="m-0 text-myprime">
                 Anouncements
                 <button ion-button clear item-end>View All</button>
             </ion-list-header>
-            <button ion-item>
+            <button  class="border border-bottom-0 border-left-0 border-right-0" ion-item>
              <div class="text-center">
                 <ion-thumbnail>
                         <img class="d-inline" src="../assets/imgs/teachercover.jpeg">
                         <img class="d-inline"  src="../assets/imgs/teachercover.jpeg">
                 </ion-thumbnail>
                 <div class="ml-2">
-                    <h2 class="font-weight-bold text-center font-em-1">Teacher's Summer Outing</h2>
+                    <h2 class="font-weight-bold text-center font-em-1">Teacher's Team Building</h2>
                     <p class="font-em-0-75">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt accusamus cumque officiis nostrum id fuga, illo corporis reprehenderit placeat.</p>
                 </div>
             </div>
             </button>
-            <button ion-item>
-                    <div class="text-center">
-                       <ion-thumbnail>
-                               <img class="d-inline" src="../assets/imgs/teachercover.jpeg">
-                               <img class="d-inline"  src="../assets/imgs/teachercover.jpeg">
-                       </ion-thumbnail>
-                       <div class="ml-2">
-                           <h2 class="font-weight-bold text-center font-em-1">Tuition Fee Increase</h2>
-                           <p class="font-em-0-75">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt accusamus cumque officiis nostrum id fuga, illo corporis reprehenderit placeat.</p>
-                       </div>
-                   </div>
-            </button>
-            <button ion-item>
-                <div class="text-center">
-                    <ion-thumbnail>
-                            <img class="d-inline" src="../assets/imgs/teachercover.jpeg">
-                            <img class="d-inline"  src="../assets/imgs/teachercover.jpeg">
-                    </ion-thumbnail>
+            <button  class="border border-left-0 border-right-0" ion-item>
                     <div class="ml-2">
-                        <h2 class="font-weight-bold text-center font-em-1">Hiring Date</h2>
+                        <h2 class="font-weight-bold font-em-1">Tuition Fee Increase</h2>
                         <p class="font-em-0-75">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt accusamus cumque officiis nostrum id fuga, illo corporis reprehenderit placeat.</p>
                     </div>
+            </button>
+            <button ion-item>
+                    <div class="ml-2">
+                        <h2 class="font-weight-bold font-em-1">Hiring Date</h2>
+                        <p class="font-em-0-75">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil deserunt accusamus cumque officiis nostrum id fuga, illo corporis reprehenderit placeat.</p>
+                    </div>
+            </button>
+        </ion-list>
+        </ion-card>
+    </div>
+    <div class="col-lg-6 px-0 over-flow-y  pb-5 mt-3 vh-100">
+        <ion-card class="statistics no-shadow text-center m-0 mb-3">
+        <ion-item class="border border-top-0 border-right-0 border-left-0 pl-0">
+                <div class="d-flex align-items-center ml-4 ">
+                    <ion-card class="mt-0 bg-myprime no-shadow text-center p-4">
+                            <div ion-text color="white" class="font-weight-bold font-em-3">150</div>
+                            <div ion-text color="white">Total Enrolee</div>
+                    </ion-card>
+                    <ion-card class="mt-0 bg-danger no-shadow text-center p-4">
+                            <div ion-text color="white" class="font-weight-bold font-em-3">20</div>
+                            <div ion-text color="white">Total Dropout</div>
+                    </ion-card>
+                    <ion-card class="mt-0 bg-success no-shadow text-center p-4">
+                            <div ion-text color="white" class="font-weight-bold font-em-3">500</div>
+                            <div ion-text color="white">Current Students</div>
+                    </ion-card>
                 </div>
-            </button>
-        </ion-list>
-    </div>
-    <div class="col-lg-6">
+            </ion-item>
+            <ion-list>
+                <div class="border border-top-0 border-right-0 border-left-0" *ngFor="let stat of stats">
+                    <ion-item class="stat-border" [ngClass]="stat.border">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <ion-icon [color]="stat.status" [name]="stat.icon" class="px-3"></ion-icon>
+                                <button [innerHTML]="stat.number" ion-button clear class="px-3 font-em-0-75"></button>
+                            </div>
+                            <span [innerHTML]="stat.title" class="px-3 font-em-0-75"></span>
+                            <ion-badge [innerHTML]="stat.name" class="px-3 font-em-0-75"></ion-badge>
+                        </div>
+                        <ion-avatar item-end>
+                            <img [src]="stat.image">
+                        </ion-avatar>
+                    </ion-item>
+                </div>
+            </ion-list> 
+        </ion-card>
+            <!-- <ion-card class="statistics no-shadow text-center m-0 mb-5">
+                <div class="container pl-0">
+                    <div class="row">
+                        <ion-list class="no-lines col-lg-6">
+                            <ion-item>
+                                <ion-icon class="font-em-3" name="logo-facebook"></ion-icon> Facebook
+                            </ion-item>
+                            <ion-item>
+                                    <ion-icon class="font-em-3" name="logo-twitter"></ion-icon> Twitter
+                            </ion-item>
+                            <ion-item>
+                                    <ion-icon class="font-em-3" name="logo-google"></ion-icon> Google
+                            </ion-item >
+                            <ion-item>
+                                    <ion-icon class="font-em-3" name="logo-github"></ion-icon> Github
+                            </ion-item>
+                        </ion-list> 
+                        <ion-list class="col-lg-6">
+                            <ion-item>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <button ion-button clear class="px-3 font-em-0-75">1</button>
+                                    <span  class="px-3 font-em-0-75">Rating</span>
+                                    <ion-badge  class="px-3 font-em-0-75">5</ion-badge>
+                                </div>
+                                <ion-avatar item-end>
+                                    <img src="../assets/imgs/profile1.jpg">
+                                </ion-avatar>
+                            </ion-item>
+                        </ion-list> 
+                    </div>
+                </div>
+                <div class="row">
+                    <ion-list class="no-lines col-lg-6">
 
+                    </ion-list> 
+                    <ion-list class="no-lines col-lg-6">
+                        <ion-item class="border border-bottom-0 border-left-0">
+                                <ion-icon class="font-em-3" name="logo-facebook"></ion-icon>
+                                <h3 class="font-em-1">Joana Baltazar</h3>
+                                <button ion-button outline class="px-3 font-em-0-75">View Profile</button>
+                        </ion-item>
+                        <ion-item  class="border border-bottom-0 border-left-0">
+                            <ion-thumbnail item-start>
+                                <img class="img-thumbnail" src="../assets/imgs/profile1.jpg">
+                            </ion-thumbnail>
+                                <h3 class="font-em-1">Joana Baltazar</h3>
+                                <button ion-button outline class="px-3 font-em-0-75">View Profile</button>
+                        </ion-item>
+                    </ion-list> 
+                </div>
+            </ion-card> -->
     </div>
-    <div class="notification-panel col-lg-3 over-flow-y vh-100">
-        <ion-list no-lines>
-            <button ion-item *ngFor="let item of teachers">
-                <ion-avatar item-start>
-                <img [src]="item.image">
-                </ion-avatar>
-                <h2 class="font-em-0-75" [innerHTML]="item.name"></h2>
-                <sub [innerHTML]="item.time" class="text-muted"></sub>
-                <ion-icon class="text-muted font-em-25" item-end [name]="item.offline"></ion-icon>
-                <ion-icon color="primary" class="font-em-25" item-end [name]="item.online"></ion-icon>
-            </button>
-        </ion-list>
+    <div class="notification-panel col-lg-3 over-flow-y pb-5 vh-100 px-0 mt-3">
+        <ion-card class="no-shadow m-0">
+            <ion-list class=" no-lines pb-5">
+                <ion-item *ngFor="let item of teachers">
+                    <ion-avatar item-start>
+                    <img [src]="item.image">
+                    </ion-avatar>
+                    <h2 class="font-em-0-75" [innerHTML]="item.name"></h2>
+                    <p [innerHTML]="item.time" class="font-em-0-75 text-muted"></p>
+                    <ion-icon class="text-muted" item-end [name]="item.offline"></ion-icon>
+                    <ion-icon color="black" item-end [name]="item.online"></ion-icon>
+                    <button class="p-0 m-0 font-em-0-75" ion-button clear>Reserve</button>
+                    <button class="p-1 m-0 font-em-0-75" ion-button clear>Cancel</button>
+                </ion-item>
+            </ion-list>
+        </ion-card>
     </div>
 </div>
 </div>

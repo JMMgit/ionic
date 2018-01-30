@@ -3,6 +3,17 @@ page-home {
     .over-flow-y{ overflow-y: scroll!important }
 
     .notification-panel{
+        ion-item{ padding-right:15px}
+        ion-item:hover{
+            padding-right:10px!important;
+            border-right:5px solid map-get($colors, myprime);
+            background:rgba(map-get($colors, myprime),0.1)!important;
+        }
+    }
 
+    .statistics{
+        .stat-border{
+            border-right:5px solid;
+        }
     }
 }   

@@ -36,8 +36,13 @@ $app-direction: ltr;
 $colors: (
   transparent:transparent,
   gray:#E1E2E1,
+  gray-light:#f8f9fa,
   white:#fff,
   black:#000,
+  warning:  #ffc107,
+  danger:  #dc3545,
+  success: #28a745,
+  info: #17a2b8,
   primary: #488aff,
   myprime:#2196f3,
   myprime-light:#6ec6ff,

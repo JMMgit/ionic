@@ -10,6 +10,10 @@ $theme-colors: (
     "mysec-dark":#6a0080,
 );
 
+// $spacers: (
+//   '6': (1rem * 6)
+// ) ;
+
 .no-shadow{box-shadow: none!important}
 
 ::-webkit-scrollbar{//remove scrollbar from ion-content
@@ -28,7 +32,6 @@ border:none!important;
 .left-0{left:0!important}
 .right-0{right:0!important}
 .bottom-0{bottom:0!important}
-
 .popover-content{top:70px!important}// navbar popdown temp remedy
 
 //for my cover(hero) height
