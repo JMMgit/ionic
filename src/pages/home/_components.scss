@@ -18,6 +18,30 @@ page-home {
     }
 
     .cover-height{
-        height: 30em!important;
+        height: 34em!important;
+    }
+
+    .graded{
+        img{
+            height: 4em!important;
+            width: 4em!important;
+        }
+
+        .item{
+            position: relative!important;
+            &-hover-effect{
+                opacity: 0;
+                transition: all 0.2s ease-in-out;
+            }
+            &-hover-effect:hover{
+                opacity: 1!important;
+                background:rgba(map-get($colors, myprime-dark),0.9)!important;
+                cursor: pointer;
+            }
+        }
+
+
+
+
     }
 }   
