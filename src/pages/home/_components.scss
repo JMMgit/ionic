@@ -1,5 +1,5 @@
 page-home {
-    .scroll-content{ overflow:hidden!important }
+    // .scroll-content{ overflow:hidden!important }
     .over-flow-y{ overflow-y: scroll!important }
 
     .notification-panel{
@@ -21,7 +21,7 @@ page-home {
         height: 34em!important;
     }
 
-    .graded{
+    .view-hover{
         img{
             height: 4em!important;
             width: 4em!important;
@@ -39,9 +39,7 @@ page-home {
                 cursor: pointer;
             }
         }
-
-
-
-
     }
+
+
 }   

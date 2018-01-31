@@ -1,32 +1,10 @@
 page-home {
 
-    .scale:hover{
-        ion-card{
-            transform: scale(1.04, 1.04);
-        }
+    // .scale:hover{
+    //     ion-card{
+    //         transform: scale(1.04, 1.04);
+    //     }
 
-    }
-    
-    @media screen and (max-width:991px) {
-        
-        .cover{
-            text-align: center;
-            h1{
-                font-size: 2.4em!important;
-            }
-    
-            p{
-                font-size: 1.2em;
-            }
-
-            a{
-                padding: 1rem!important;
-            }
-
-            img{
-                padding-bottom: 3em;
-            }
-        }
-    }
+    // }
 
 }  

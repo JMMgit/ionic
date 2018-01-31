@@ -2,22 +2,25 @@
 <my-header></my-header>
 <div class="container">
 <div class="row">
-    <div class="col-lg-3 over-flow-y vh-100 mt-3 pb-5 px-0">
-        <ion-card  class="cover-height no-shadow mt-0 mx-0 pb-1">
-             <!-- <ion-slides speed="1000" loop autoplay="3000">
+    <div class="col-lg-3 mt-3 pb-5 px-0">
+        <ion-card  class="cover-height no-shadow mt-0 mx-0">
+             <ion-slides loop autoplay="4000" speed="800">
                  <ion-slide>
-                     page1
+                     <img class="w-100 p-0" alt="slider image" src="../assets/imgs/last1.jpg">
                  </ion-slide>
                  <ion-slide>
-                    page2
+                    <img class="w-100 p-0" alt="slider image" src="../assets/imgs/last2.jpg">
                 </ion-slide>
                 <ion-slide>
-                    page3
+                    <img class="w-100 p-0" alt="slider image" src="../assets/imgs/last3.jpg">
                 </ion-slide>
-             </ion-slides>    -->
+                <ion-slide>
+                    <img class="w-100 p-0" alt="slider image" src="../assets/imgs/last4.jpg">
+                </ion-slide>
+             </ion-slides>
         </ion-card>
         <ion-card class="no-shadow mx-0">
-            <ion-list text-wrap class=" no-lines pb-5">
+            <ion-list text-wrap class=" no-lines pb-3">
                 <ion-list-header class="m-0 text-myprime">
                     Reminders
                     <button ion-button clear item-end>View All</button>
@@ -42,7 +45,7 @@
                 </button>
             </ion-list>
             </ion-card>
-        <ion-card class="no-shadow mt-0 mx-0 pb-1">
+        <ion-card class="no-shadow mt-0 mx-0 pb-4">
             <ion-list class="no-lines" text-wrap>
                     <ion-list-header class="text-primary m-0 border-0">
                         Suggested Books
@@ -83,8 +86,8 @@
                     </button>
                 </ion-list>
         </ion-card>
-    <ion-card class="no-shadow mx-0">
-            <ion-list text-wrap class="pb-1 no-lines">
+    <ion-card class="no-shadow mx-0 pb-4">
+            <ion-list text-wrap class="pb-2 no-lines">
                 <ion-list-header class="m-0 text-primary">
                     Rules and Regulation
                     <button ion-button clear item-end>Read More</button>
@@ -105,7 +108,7 @@
             </ion-list>
             </ion-card>
     </div>
-<div class="col-lg-6 px-0 over-flow-y pb-5 mt-3 vh-100">
+<div class="col-lg-6 px-0  pb-5 mt-3">
 <ion-card class="no-shadow cover-height mt-0 mx-0 pb-1">
 <div class="container-fluid">
     <div class="row justify-content-center align-items-center">
@@ -134,7 +137,7 @@
             </ion-card>
         </div>
         <div class="col-lg-6 p-0 p-0">
-            <ion-card class="no-shadow graded">
+            <ion-card class="no-shadow view-hover">
                 <h2 class="font-weight-light font-em-1 bg-myprime-dark text-white m-0 p-2 text-center">Recently Graded Teachers</h2>
                 <div class="d-flex flex-column">
                     <div class="item border border-right-0 border-left-0 border-bottom-0 d-flex align-items-center jusitfy-content-center">
@@ -176,26 +179,26 @@
             <ion-card class="no-shadow">
                     <h2 class="font-weight-light font-em-1 bg-myprime-dark text-white m-0 p-2 text-center">Teacher's Comment</h2>
                 <ion-list class="no-lines">
-                    <button ion-item class="border border-top-0 border-left-0 border-right-0">
+                    <button (click)="presentTeacherModal()" ion-item class="border border-top-0 border-left-0 border-right-0">
                         <ion-avatar item-start>
                             <img src="../assets/imgs/profile8.jpg">
                         </ion-avatar>
                         <h3>Joana Simon</h3>
-                        <p>I've had a pretty messed up day. If we just</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure?</p>
                     </button>
-                    <button ion-item class="border  border-top-0 border-left-0 border-right-0">
+                    <button (click)="presentTeacherModal()" ion-item class="border  border-top-0 border-left-0 border-right-0">
                         <ion-avatar item-start>
                             <img src="../assets/imgs/profile7.jpg">
                         </ion-avatar>
                         <h3>Joana Simon</h3>
-                        <p>I've had a pretty messed up day. If we just</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure?</p>
                     </button>
-                    <button ion-item>
+                    <button (click)="presentTeacherModal()" ion-item>
                         <ion-avatar item-start>
                             <img src="../assets/imgs/profile6.jpg">
                         </ion-avatar>
                         <h3>Joana Simon</h3>
-                        <p>I've had a pretty messed up day. If we just</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure?</p>
                     </button>
 
                 </ion-list>
@@ -205,26 +208,26 @@
         <ion-card class="no-shadow">
                 <h2 class="font-weight-light font-em-1 bg-myprime-dark text-white m-0 p-2 text-center">Student's Comment</h2>
                  <ion-list class="no-lines">
-                    <button ion-item class="border border-top-0 border-left-0 border-right-0">
+                    <button (click)="presentStudentModal()" ion-item class="border border-top-0 border-left-0 border-right-0">
                         <ion-avatar item-start>
-                            <img src="../assets/imgs/profile8.jpg">
+                            <img src="../assets/imgs/student1.jpg">
                         </ion-avatar>
-                        <h3>Joana Simon</h3>
-                        <p>I've had a pretty messed up day. If we just</p>
+                        <h3>Derick Bartolome</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure?</p>
                     </button>
-                    <button ion-item class="border  border-top-0 border-left-0 border-right-0">
+                    <button (click)="presentStudentModal()" ion-item class="border  border-top-0 border-left-0 border-right-0">
                         <ion-avatar item-start>
-                            <img src="../assets/imgs/profile7.jpg">
+                            <img src="../assets/imgs/student2.jpg">
                         </ion-avatar>
-                        <h3>Joana Simon</h3>
-                        <p>I've had a pretty messed up day. If we just</p>
+                        <h3>Dennis Santiago</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure?</p>
                     </button>
-                    <button ion-item>
+                    <button (click)="presentStudentModal()" ion-item>
                         <ion-avatar item-start>
-                            <img src="../assets/imgs/profile6.jpg">
+                            <img src="../assets/imgs/student3.jpg">
                         </ion-avatar>
-                        <h3>Joana Simon</h3>
-                        <p>I've had a pretty messed up day. If we just</p>
+                        <h3>Marco Sison</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, iure?</p>
                     </button>
 
                 </ion-list>
@@ -253,12 +256,36 @@
             </ion-list> 
         </ion-card>
     </div>
-    <div class="notification-panel col-lg-3 over-flow-y pb-5 vh-100 px-0 mt-3">
+    <div class=" col-lg-3 pb-5  px-0 mt-3">
         <ion-card class="no-shadow cover-height  mt-0 mx-0 pb-1">
-        
+            <h1 class="text-center font-weight-light bg-myprime p-3 font-em-1-25 text-white">Activity Log</h1>
+            <div class="d-flex justify-content-around align-items-center">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3 class="ml-2 font-em-0-75 font-weight-bold mr-1">Filter by:</h3>
+                    <ion-buttons>
+                        <ion-icon color="myprime" class="font-em-1-50 px-2" name="alarm"></ion-icon>
+                        <ion-icon color="myprime" class="font-em-1-50 px-2" name="person"></ion-icon>
+                        <ion-icon color="myprime" class="font-em-1-50 px-2" name="paper-plane"></ion-icon>
+                        <ion-icon color="myprime" class="font-em-1-50 px-2" name="cash"></ion-icon>  
+                    </ion-buttons>
+                </div>
+                <button clear class="font-em-0-75" ion-button outline>Clear</button>
+            </div>
+
+            <ion-list class="no-lines">
+                <ion-item class="font-em-0-75"> <span class="pr-3" item-start>4:30pm</span><ion-icon color="myprime" class="font-em-1-50 px-1" name="person"></ion-icon> Marco David Reserved a class</ion-item>
+                <ion-item class="font-em-0-75"> <span class="pr-3" item-start>3:24pm</span><ion-icon color="myprime" class="font-em-1-50 px-1" name="paper-plane"></ion-icon> Teacher Monica Registered</ion-item>
+                <ion-item class="font-em-0-75"> <span class="pr-3" item-start>2:21pm</span><ion-icon color="myprime" class="font-em-1-50 px-1" name="clock"></ion-icon> Student James Started a Class</ion-item>
+                <ion-item class="font-em-0-75"> <span class="pr-3" item-start>1:24pm</span><ion-icon color="myprime" class="font-em-1-50 px-1" name="cash"></ion-icon> Student Jonathan Payed Tuition</ion-item>
+                <ion-item class="font-em-0-75"> <span class="pr-3" item-start>2:21pm</span><ion-icon color="myprime" class="font-em-1-50 px-1" name="clock"></ion-icon> Student James Started a Class</ion-item>
+                <ion-item class="font-em-0-75"> <span class="pr-3" item-start>1:24pm</span><ion-icon color="myprime" class="font-em-1-50 px-1" name="cash"></ion-icon> Student Jonathan Payed Tuition</ion-item>
+                <ion-item class="font-em-0-75"> <span class="pr-3" item-start>9:21pm</span><ion-icon color="myprime" class="font-em-1-50 px-1" name="person"></ion-icon> Teacher James Logged in</ion-item>
+                <ion-item class="font-em-0-75"> <span class="pr-3" item-start>8:24pm</span><ion-icon color="myprime" class="font-em-1-50 px-1" name="person"></ion-icon>Teacher James Logged out</ion-item>
+            </ion-list>
+
         </ion-card>
-        <ion-card class="no-shadow m-0">
-            <ion-list class=" no-lines pb-5">
+        <ion-card class="notification-panel no-shadow m-0">
+            <ion-list class=" no-lines">
                 <ion-item *ngFor="let item of teachers">
                     <ion-avatar item-start>
                     <img [src]="item.image">
@@ -275,4 +302,7 @@
     </div>
 </div>
 </div>
+<footer class=" text-center p-5 bg-myprime-dark">
+    <span class="text-white font-em-1">&copy;Copy Right 2018. All Rights Reserved.</span>
+</footer>
 </ion-content>

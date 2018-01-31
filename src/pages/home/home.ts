@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PopoverController,IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ModalController, PopoverController,IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
@@ -9,7 +9,7 @@ import { PopoverController,IonicPage, NavController, NavParams } from 'ionic-ang
 
 export class HomePage {
   
-  constructor(public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController) {
+  constructor(public modalCtrl: ModalController,public navCtrl: NavController, public navParams: NavParams, public popoverCtrl: PopoverController) {
   }
 
   showChat(myEvent) {
@@ -17,6 +17,21 @@ export class HomePage {
     popover.present({
       ev: myEvent
     });
+  }
+
+  presentGradedModal() {
+    let gradedModal = this.modalCtrl.create('GradedModalPage');
+    gradedModal.present();
+  }
+
+  presentTeacherModal() {
+    let teacherModal = this.modalCtrl.create('TeacherModalPage');
+    teacherModal.present();
+  }
+
+  presentStudentModal() {
+    let studentModal = this.modalCtrl.create('StudentModalPage');
+    studentModal.present();
   }
 
   teachers = [
@@ -81,36 +96,6 @@ export class HomePage {
       offline:"phone-portrait",
     },
     {
-      name: "Leslie Liberty",
-      image: "../assets/imgs/profile8.jpg",
-      time:"Class Started",
-      online:"ionitron",
-    },
-    {
-      name: "Kim Thomas",
-      image: "../assets/imgs/profile6.jpg",
-      time:"2:30pm",
-      offline:"phone-portrait",
-    },
-    {
-      name: "Margarette Liberty",
-      image: "../assets/imgs/profile7.jpg",
-      time:"2:30pm",
-      offline:"phone-portrait",
-    },
-    {
-      name: "Leslie Liberty",
-      image: "../assets/imgs/profile8.jpg",
-      time:"Class Started",
-      online:"ionitron",
-    },
-    {
-      name: "Kim Thomas",
-      image: "../assets/imgs/profile6.jpg",
-      time:"Class Started",
-      online:"ionitron",
-    },
-    {
       name: "Margarette Liberty",
       image: "../assets/imgs/profile7.jpg",
       time:"Class Started",
@@ -119,36 +104,6 @@ export class HomePage {
     {
       name: "Leslie Liberty",
       image: "../assets/imgs/profile8.jpg",
-      time:"Class Started",
-      online:"ionitron",
-    },
-    {
-      name: "Kim Thomas",
-      image: "../assets/imgs/profile6.jpg",
-      time:"Class Started",
-      online:"ionitron",
-    },
-    {
-      name: "Margarette Liberty",
-      image: "../assets/imgs/profile7.jpg",
-      time:"Class Started",
-      online:"ionitron",
-    },
-    {
-      name: "Leslie Liberty",
-      image: "../assets/imgs/profile8.jpg",
-      time:"Class Started",
-      online:"ionitron",
-    },
-    {
-      name: "Kim Thomas",
-      image: "../assets/imgs/profile6.jpg",
-      time:"2:30pm",
-      offline:"phone-portrait",
-    },
-    {
-      name: "Margarette Liberty",
-      image: "../assets/imgs/profile7.jpg",
       time:"2:30pm",
       offline:"phone-portrait",
     },
@@ -215,6 +170,51 @@ export class HomePage {
       status:"danger",
       icon:"arrow-down",
       border:"border-danger",
+    },
+    {
+      name: "Margarette Liberty",
+      image: "../assets/imgs/profile4.jpg",
+      title:"Student enrolee on january",
+      number:"45",
+      status:"success",
+      icon:"arrow-up",
+      border:"border-success",
+    },
+    {
+      name: "Leslie Liberty",
+      image: "../assets/imgs/profile3.jpg",
+      title:"Student on December",
+      number:"45",
+      status:"warning",
+      icon:"remove",
+      border:"border-warning",
+    },
+    {
+      name: "Kim Thomas",
+      image: "../assets/imgs/profile2.jpg",
+      title:"Student enrolee on january",
+      number:"45",
+      status:"success",
+      icon:"arrow-up",
+      border:"border-success",
+    },
+    {
+      name: "Margarette Liberty",
+      image: "../assets/imgs/profile1.jpg",
+      title:"Student on December",
+      number:"45",
+      status:"warning",
+      icon:"remove",
+      border:"border-warning",
+    },
+    {
+      name: "Margarette Liberty",
+      image: "../assets/imgs/profile4.jpg",
+      title:"Student enrolee on january",
+      number:"45",
+      status:"success",
+      icon:"arrow-up",
+      border:"border-success",
     },
     {
       name: "Margarette Liberty",
